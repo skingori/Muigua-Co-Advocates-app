@@ -10,8 +10,8 @@ admin.AdminSite.index_title = "ADMIN DASHBOARD"
 
 
 class LawyerAdmin(admin.ModelAdmin):
-    search_fields = ('lawyer_name', 'lawyer_email', 'lawyer_mobile',)
-    list_display = ('lawyer_email', 'lawyer_name', 'lawyer_mobile', 'lawyer_experience',)
+    search_fields = ('lawyer_username', 'lawyer_mobile',)
+    list_display = ('lawyer_username', 'lawyer_mobile', 'lawyer_experience', )
 
 
 # class UserProfileAdmin(admin.ModelAdmin):
