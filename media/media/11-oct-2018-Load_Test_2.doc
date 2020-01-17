@@ -1,0 +1,739 @@
+{\rtf1\ansi\ansicpg1252\uc1{\info{\title Document}
+{\author }
+{\comment PDF CreactiveX}
+{\creatim\yr2019\mo10\dy30\hr1\min15\sec47}}
+{\fonttbl{\f0 Times New Roman;}{\f1 CantarellRegular;}{\f2 Cantarell;}{\f3 Liberation Sans;}{\f4 Liberation Serif;}}
+{\colortbl;\red0\green0\blue0;\red245\green245\blue245;\red248\green248\blue248;\red255\green255\blue255;\red255\green0\blue0;\red20\green131\blue102;\red205\green23\blue29;\red255\green63\blue0;}
+\paperw11900\paperh16820
+\margl0\margr0\margt0\margb0
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1{\sp{\sn shapeType}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 1}}\shpleft1133 \shptop2219 \shpright10771 \shpbottom2541
+{\sp{\sn fillColor}{\sv 16119285}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fFilled}{\sv 1}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1{\sp{\sn shapeType}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 1}}\shpleft1133 \shptop3215 \shpright10771 \shpbottom3933
+{\sp{\sn fillColor}{\sv 16316664}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fFilled}{\sv 1}}}}
+
+\par\pard\pvpg\phpg\posx1164\posy1408\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Load Test Report
+\par\pard\pvpg\phpg\posx1164\posy1728\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 200 up to 3000
+\par\pard\pvpg\phpg\posx1136\posy2250\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Executive Summary\b0
+\par\pard\pvpg\phpg\posx1136\posy2802\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b User Capacity\b0
+\par\pard\pvpg\phpg\posx1212\posy3292\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The User Capacity Analysis calculates how many users the application can support based on the 
+\par\pard\pvpg\phpg\posx1212\posy3594\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 configured performance goals. See the User Capacity section for a more detailed analysis {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop4409 \shpright10764 \shpbottom4409
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop4703 \shpright10764 \shpbottom4703
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop4999 \shpright10764 \shpbottom4999
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\pvpg\phpg\posx1136\posy4114\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Estimated User Capacity\b0
+\par\pard\pvpg\phpg\posx9628\posy4114\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 at least 250
+\par\pard\pvpg\phpg\posx9308\posy4408\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 less than 5000
+\par\pard\pvpg\phpg\posx1136\posy4704\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Maximum Users Analyzed\b0
+\par\pard\pvpg\phpg\posx10224\posy4704\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 3000
+\par\pard\pvpg\phpg\posx1136\posy5691\charscalex100\expndtw0 \ql\fs24\cf1\f3\fs28\cf5 Performance Goals \u8211k Before Optimization {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6419 \shpright10770 \shpbottom6419
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6713 \shpright10770 \shpbottom6713
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7009 \shpright10770 \shpbottom7009
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7303 \shpright10770 \shpbottom7303
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7599 \shpright10770 \shpbottom7599
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7893 \shpright10770 \shpbottom7893
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop8189 \shpright10770 \shpbottom8189
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy6124\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Threads\b0
+\par\pard\pvpg\phpg\posx7518\posy6124\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Throughput\b0
+\par\pard\pvpg\phpg\posx10136\posy6124\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Status\b0
+\par\pard\pvpg\phpg\posx1142\posy6418\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 200
+\par\pard\pvpg\phpg\posx8140\posy6418\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 55.85 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop6429 \shpright10771 \shpbottom6669
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy6714\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 300
+\par\pard\pvpg\phpg\posx8126\posy6714\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 54.02 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop6724 \shpright10771 \shpbottom6964
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy7008\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 350
+\par\pard\pvpg\phpg\posx8124\posy7008\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 60.67 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop7019 \shpright10771 \shpbottom7259
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy7304\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 360
+\par\pard\pvpg\phpg\posx8134\posy7304\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 62.54 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop7314 \shpright10771 \shpbottom7554
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C5445F3807EF37174F37374F37174F37375D82A2FE02C34DF2C33C72830E6363EE5363EC5202BE53038F25560F3636BF36369F3636BF3646BC51827C61928C51927C6202CF25460C51324F13F51F03F51F24858F14858
+D36574DF9CA8CA5D49CE6E5ECA5746CA5846C95846D5887CC95043C73334C9473EC9473FC8473FC73C38E0615BF5817DC73C3AE3514FF5807EDCA6A0E3C3C3FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFF190BCBAA0000009349444154789C6DCEEB0E82300C05E079415141BC7760C7C50D2F20AEBEFFCBC92A9A68387FDA7C699A239E7F117D40A9E65DA7C440455338D1A7
+262707D63C6A93D9CC88DA58067D1D0FAB73351A5CF41B0CDED7AB6819DDD07CA09C87E1615676D0C60F8E4912F8DF1EB8972E0BEC00B7527A1B4FC63B6450206340856E282E0613C0F607C214B8181120030251FFC50FBC00E231241562EB67FC0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy7598\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 400
+\par\pard\pvpg\phpg\posx8124\posy7598\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 83.89 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop7597 \shpright10771 \shpbottom7837
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C5445F3807EF37174F37374F37174F37375D82A2FE02C34DF2C33C72830E6363EE5363EC5202BE53038F25560F3636BF36369F3636BF3646BC51827C61928C51927C6202CF25460C51324F13F51F03F51F24858F14858
+D36574DF9CA8CA5D49CE6E5ECA5746CA5846C95846D5887CC95043C73334C9473EC9473FC8473FC73C38E0615BF5817DC73C3AE3514FF5807EDCA6A0E3C3C3FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFF190BCBAA0000009349444154789C6DCEEB0E82300C05E079415141BC7760C7C50D2F20AEBEFFCBC92A9A68387FDA7C699A239E7F117D40A9E65DA7C440455338D1A7
+262707D63C6A93D9CC88DA58067D1D0FAB73351A5CF41B0CDED7AB6819DDD07CA09C87E1615676D0C60F8E4912F8DF1EB8972E0BEC00B7527A1B4FC63B6450206340856E282E0613C0F607C214B8181120030251FFC50FBC00E231241562EB67FC0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy7894\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1000
+\par\pard\pvpg\phpg\posx8118\posy7894\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 89.50 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop7904 \shpright10771 \shpbottom8144
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C5445F3807EF37174F37374F37174F37375D82A2FE02C34DF2C33C72830E6363EE5363EC5202BE53038F25560F3636BF36369F3636BF3646BC51827C61928C51927C6202CF25460C51324F13F51F03F51F24858F14858
+D36574DF9CA8CA5D49CE6E5ECA5746CA5846C95846D5887CC95043C73334C9473EC9473FC8473FC73C38E0615BF5817DC73C3AE3514FF5807EDCA6A0E3C3C3FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFF190BCBAA0000009349444154789C6DCEEB0E82300C05E079415141BC7760C7C50D2F20AEBEFFCBC92A9A68387FDA7C699A239E7F117D40A9E65DA7C440455338D1A7
+262707D63C6A93D9CC88DA58067D1D0FAB73351A5CF41B0CDED7AB6819DDD07CA09C87E1615676D0C60F8E4912F8DF1EB8972E0BEC00B7527A1B4FC63B6450206340856E282E0613C0F607C214B8181120030251FFC50FBC00E231241562EB67FC0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1136\posy8712\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The table above shows checkout performance before optimization:
+\par\pard\pvpg\phpg\posx1136\posy9156\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 D
+\par\pard\pvpg\phpg\posx1298\posy9156\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 etails of the environment on which the tests were done:
+\par\pard\pvpg\phpg\posx1136\posy9598\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Server Properties:\b0
+\par\pard\pvpg\phpg\posx1496\posy10070\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy10070\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 M
+\par\pard\pvpg\phpg\posx2050\posy10070\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 emory 1 GB 
+\par\pard\pvpg\phpg\posx1496\posy10514\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy10514\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2 Cores
+\par\pard\pvpg\phpg\posx1136\posy10986\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Testing Machine:\b0
+\par\pard\pvpg\phpg\posx1496\posy11458\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy11458\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 M
+\par\pard\pvpg\phpg\posx2050\posy11458\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 emory 8 GB
+\par\pard\pvpg\phpg\posx1496\posy11900\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy11900\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Core i7
+\par\pard\pvpg\phpg\posx1136\posy12372\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Tools Used:\b0
+\par\pard\pvpg\phpg\posx1496\posy12844\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy12844\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 J
+\par\pard\pvpg\phpg\posx1954\posy12844\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 meter
+\par\pard\pvpg\phpg\posx1136\posy13730\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Database Connections\b0
+\par\pard\pvpg\phpg\posx1496\posy14202\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy14202\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 50  {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop2221 \shpright10771 \shpbottom2221
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop2541 \shpright1134 \shpbottom2541
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop3095 \shpright1134 \shpbottom3095
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop3217 \shpright10771 \shpbottom3217
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop3216 \shpright10771 \shpbottom3933
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop3933 \shpright1134 \shpbottom3933
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1135 \shptop3933 \shpright1135 \shpbottom3216
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 14474460}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop9891 \shpright1134 \shpbottom9891
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop10805 \shpright1494 \shpbottom10805
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop11277 \shpright1134 \shpbottom11277
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop12193 \shpright1494 \shpbottom12193
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop12665 \shpright1134 \shpbottom12665
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop13107 \shpright1494 \shpbottom13107
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop14023 \shpright1134 \shpbottom14023
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop14495 \shpright1494 \shpbottom14495
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\page\par
+
+\par\pard\pvpg\phpg\posx1136\posy1116\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b USER CAPACITY\b0
+\par\pard\pvpg\phpg\posx1136\posy1740\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Summary\b0
+\par\pard\pvpg\phpg\posx1496\posy2124\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy2124\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The above test results shows that the best throughput we can do having the environment 
+\par\pard\pvpg\phpg\posx1856\posy2428\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 above, is 
+\par\pard\pvpg\phpg\posx2754\posy2428\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 60.67 \b0
+\par\pard\pvpg\phpg\posx3378\posy2428\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Transactions per second when 
+\par\pard\pvpg\phpg\posx6384\posy2428\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 350\b0
+\par\pard\pvpg\phpg\posx6774\posy2428\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  requests are pushed concurrently
+\par\pard\pvpg\phpg\posx1496\posy2870\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy2870\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The breaking point was at 
+\par\pard\pvpg\phpg\posx4412\posy2870\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 360 requests\b0
+\par\pard\pvpg\phpg\posx5712\posy2870\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 ,having a throughput of 
+\par\pard\pvpg\phpg\posx8038\posy2870\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 62.54 TPS (Transactions \b0
+\par\pard\pvpg\phpg\posx1856\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b per second)\b0
+\par\pard\pvpg\phpg\posx3053\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  This means that 
+\par\pard\pvpg\phpg\posx4708\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 98.82%\b0
+\par\pard\pvpg\phpg\posx5506\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  of the total request pushed were successful leaving 
+\par\pard\pvpg\phpg\posx1856\posy3476\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 us with only 
+\par\pard\pvpg\phpg\posx3074\posy3476\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 1.18%\b0
+\par\pard\pvpg\phpg\posx3696\posy3476\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  failed requests
+\par\pard\pvpg\phpg\posx1136\posy5248\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 B
+\par\pard\pvpg\phpg\posx1280\posy5248\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 elow table shows more details of the test {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5987 \shpright10770 \shpbottom5987
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6281 \shpright10770 \shpbottom6281
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6577 \shpright10770 \shpbottom6577
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6871 \shpright10770 \shpbottom6871
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7167 \shpright10770 \shpbottom7167
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7461 \shpright10770 \shpbottom7461
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop7757 \shpright10770 \shpbottom7757
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Threads\b0
+\par\pard\pvpg\phpg\posx4668\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Throughput\b0
+\par\pard\pvpg\phpg\posx6468\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Pass (%)\b0
+\par\pard\pvpg\phpg\posx7904\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Ramp-up time\b0
+\par\pard\pvpg\phpg\posx10010\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b F\b0
+\par\pard\pvpg\phpg\posx10138\posy5692\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b ail (%)\b0
+\par\pard\pvpg\phpg\posx1142\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 200
+\par\pard\pvpg\phpg\posx5290\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 55.85
+\par\pard\pvpg\phpg\posx6728\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8718\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10634\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx1142\posy6282\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 300
+\par\pard\pvpg\phpg\posx5276\posy6282\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 54.02
+\par\pard\pvpg\phpg\posx6728\posy6282\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8718\posy6282\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10634\posy6282\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx1142\posy6576\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 350
+\par\pard\pvpg\phpg\posx5274\posy6576\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 60.67
+\par\pard\pvpg\phpg\posx6728\posy6576\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8718\posy6576\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10634\posy6576\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx1142\posy6872\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 360
+\par\pard\pvpg\phpg\posx5284\posy6872\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 62.54
+\par\pard\pvpg\phpg\posx6534\posy6872\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 98.82%
+\par\pard\pvpg\phpg\posx8718\posy6872\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf5\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10166\posy6872\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 1.18%
+\par\pard\pvpg\phpg\posx1142\posy7166\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 400
+\par\pard\pvpg\phpg\posx5274\posy7166\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 83.89
+\par\pard\pvpg\phpg\posx6532\posy7166\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 95.63%
+\par\pard\pvpg\phpg\posx8718\posy7166\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf5\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10102\posy7166\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 4.38%
+\par\pard\pvpg\phpg\posx1142\posy7462\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 1000
+\par\pard\pvpg\phpg\posx5268\posy7462\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 89.50
+\par\pard\pvpg\phpg\posx6558\posy7462\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 81.38%
+\par\pard\pvpg\phpg\posx8718\posy7462\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf5\b 10 sec\b0
+\par\pard\pvpg\phpg\posx10008\posy7462\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 18.63%
+\par\pard\pvpg\phpg\posx1136\posy7996\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Ramp-up Time
+\par\pard\pvpg\phpg\posx1136\posy8380\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Ramp-Up is the amount of time Jmeter should take to get all the threads sent for the execution. 
+\par\pard\pvpg\phpg\posx1136\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 For example, if Thread Count is 
+\par\pard\pvpg\phpg\posx4226\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 2\b0
+\par\pard\pvpg\phpg\posx4346\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 00\b0
+\par\pard\pvpg\phpg\posx4626\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  and the ramp-up period is 
+\par\pard\pvpg\phpg\posx7252\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10\b0
+\par\pard\pvpg\phpg\posx7496\posy8824\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  seconds, then Jmeter will take 
+\par\pard\pvpg\phpg\posx1136\posy9126\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 \b0
+\par\pard\pvpg\phpg\posx1422\posy9126\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 seconds to get all 
+\par\pard\pvpg\phpg\posx3168\posy9126\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 2\b0
+\par\pard\pvpg\phpg\posx3288\posy9126\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 00\b0
+\par\pard\pvpg\phpg\posx3568\posy9126\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  Threads up and running. 
+\par\pard\pvpg\phpg\posx1136\posy9810\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Errors Found
+\par\pard\pvpg\phpg\posx1136\posy10194\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 B
+\par\pard\pvpg\phpg\posx1280\posy10194\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 elow are the type of errors found during the tests. These errors were produced at the breaking 
+\par\pard\pvpg\phpg\posx1136\posy10496\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 point of the system
+\par\pard\pvpg\phpg\posx1136\posy12082\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 404/Not Found\b0
+\par\pard\pvpg\phpg\posx2678\posy12082\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  \u8211k This was caused by exceeding the maximum number of connections to the 
+\par\pard\pvpg\phpg\posx1136\posy12384\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 database
+\par\pard\pvpg\phpg\posx1136\posy12828\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 D
+\par\pard\pvpg\phpg\posx1298\posy12828\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 uring this time,the database connections limit was set to 
+\par\pard\pvpg\phpg\posx6834\posy12828\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 5\b0
+\par\pard\pvpg\phpg\posx6958\posy12828\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 0.\b0 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop10938 \shpright10772 \shpbottom11598
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw978\pich66\pngblip 89504E470D0A1A0A0000000D49484452000003D2000000420802000000347F79570000200049444154789CEDDD795C8CDB1B00F067B666DA27EDABA2C5D6225BD6ECB25428224BF6B244F6FDDAB76B0B458AC89E8B70254B12D9B98494B46891F69AB6D967DEDF1FC31849FC5CA3AB79BE9F3E3467CE7BCE99F7F3CCD3
+D3BB4C24822000218410420821244F5400C8C8C860B1580DBD12847E0E269389F18C1A2B0C6FD458616C23454095FCF7A4C4A461D781D0CFD297597D334BA3A15781905C0C73C0748D1AA7BECC6A8C6DD4E8911B7A01082184104208357E58762384104208212477587623841042082124775876238410420821247758
+762384104208212477587623841042082124775876238410420821247758762384104208212477587623841042082124770A5476AF9CE8E4E76250EB2BFB4DA2FC662408226CFD547F778BA055E3E4378BA2D9B96448432FE117C9CD78B9D0D37AC5D8B6D515A59296886DFE9B67F5FDE101EF5D3BB9D0D33A33E5C94F
+5AE027B72E86AF1CDFEE8F091DC422D14F1F1C21A9A33BE72EF6B6DFB660684D55B9A4E5F0B6D92782967CD973D168DBC0259EBF7675A83E8A93BA6BF935417B2B3AC2CFC5203DE9E1BF1CE7C7E0DB4DEA9B71AE4065F7189FC9D366CE1F36722C003838769C3673FEB499F3F5F5F5E43723AB24FF9F3B7F0F71F3D8F0
+6790FC66512892805690F44DA7880180C7AD898F0A91B4A852C54A64E2870754A389008041FBF111BEE6D1F5E34646C667A26F91290A9452D02F96F6F2FED3848B11A72F33A8E284E80800487FF528E549EC145FFF2F3BCF5FB27AC2E4E9BF7C8DA86E0A95BA65FDB2A055A1F001804E1101008524A65384FF62D5FFB7
+5F3FE37FD3F7C4B902FD8CECD0776C6F8F994EBD3D00A0B98D7D6F8F99C6369D02BC1CAF44EE9274D8B168F8FC91ADB2D35EFAB9184486ACDC3CC765966BD3BDAB7DF85C360070D9D54703E7CF1FD96A8157EB5B7F1FAA35B840C03F7760CDFC91AD66B936DDB9C4B3E8FD5B2EA766E938470088FAEBD8BC199F1DED7E
+F5386E9D5F6F7F37F36D0B865694150140ECB9FD7E2E0671E7C3E67A5867A6FCB377B5CF92B16D2F446C09186E09006F539F6D9AED32CBD56CC91887EB67F612040100B5FA2802D950569CF4DDDCD2E6DED593AC927CD9C66BA7F72CF4B42EC9CF868FC7B0335E3DCC7B9BB2D0D33AF64CF0AEC5C39779DB5D3AB225E9
+E1F5B553BAAEF7ED217B843B2BF5F99FB3FBFF31A1C3E5E3DB252DAF9FDDDE31DF6DA9B76DF00AEFCAF26200B87DE9D0424FEB84E88895E3DBD53A23F4243E6AE38CDE4B46B5DE1A30F0F5B3DB00B06BD1F0A2FCDCCCF4D7839D1D443247BB8BF3B3C2D64D5C3ED661CBAC7E9929FF0040DEDBE4859ED6574EEEDC3CB3
+4FDCF9D05AB3549617476C9DB96C8CFDCAF18E7FED5BCEE5547FB992D7FFDCDAB9C06D99B7DDA619BD1FC646CA699FFF7A07D67B7FF9D5D08BFACF29CC7AA9A767502432326DDA2C3F33512C129DDEBB64925F004FC9E8CBCE3B36AF3E72701F00EC5B3D61C9D8B677628E2DF06ABD648C43E2BD985A3D8BF232039779
+CD19DA6CE524A7F4578FE05B09B9A2AC2864EDC4D9EE1601C3AD8EEE9CCB6557C3170939E9F18DF533FAF8BB5BAC98D0F14ECC3179EF99FF38C54CDD12720ADACC94C71B670DF077B7583DB55BF23FF1DF5C069FC739B22360A157EB39C39A07FD3156527854941505AD1A1730DC72B1B7FDF5B3FB243DE77A581FD8E4
+17BE65A6BF9B79E012CFECB4976BFD7ACEF3B4893B1F060071E7C3FC5C0CAE46062DF7E930DBDDE242C4965A13D5592929C8DBE13BE35C81CAEE2AA1328BAF5223A0028008C82CBE8A590B270343E3E447570180C76567A63CEED6C3595D850600CF6E9F9F337FC564BFD92F1E5C8D3B1F0A00E70F6FB87FEDD4C2656B
+264E99713278A9E4548E54F4D1ADD7CEEC1B397AFC1FEBB615BF7B13BC72B41295BA6ECB1E007019326CC19235D29E6545EFF66F986C68A0BB3BF4B898CB8AD8360300D4954900F0283672F6FCE5C6C6861ACAE49ACAD2D2DC577397ACAEAE28DDB5740449CC5DBB79778F9E7DCE1E58FBF0C65F0020DBE757EDC286F4
+65102B48FAEE3BD8934AA3DD381B2CDBA84A1302008D2C868FC7B095A962550615009EC69F9D3623C0A259F35B170FBEBC7B61D1CAF5DC1AD68DC840E9B6CF122EFBF9CFB769D1F266D4FECC947FCA8ADF1FDDE66F64A8B373DF11105447EE5908004C652A003C4F88F29FB7D4D8D850BA6D6A624264D0625B5BDBD59B
+77EBE9681DDAEC575A98BB68E5FA26DABACD2CAD77871EA552A9929E6291E8D8767F5661D69FBBF6DB3BB43DBC791A9FC35663D000E049DCE911A3C676E9D2ADD62C47B7CD7CFBEAE1BCC57F4CF10D7872F3DCDFE11B6AADC4D050FF7860809989F19FBBC37AF5E977E5C48E8AB24279EEFB5F67CA8A13DF6C41149258
+0C2026482282C460D06F5D0A57A291EFDEBB3F7BB8CDDED5E3057CAE6C6732494CA30801404D9954CD2A29C87CB67AFD0E120823833F3BB92F168942374C29CB4FDF1614EE60DF76EF1F63795C763D09190042D74F4A7B7177FED2B5BE33E7DE8F3D7D3A64057C9E90C522D1814DBE66A646DBF784F7EAD3FFC2E18DAC
+D2825FB697FE6B1436754BC82368098208DB309524AED9117C48854E3DF4E70CC9C1B87ADCBA78F0C18DBF162E5BBB6ECB9ED2BCB4B8A87D00702E6CD5EBA7F1EBB6ECE9D4B9CBD9B035796F530080AE444B7A74AD4B97CE7D5D86BC4EBC13B175FA9CF9CB0C0C0C2E1CDEC8E771D4196400487D7A7DF3CE90AEDD7BC6
+9CDC9991FC5876A22F2B2505793B7C7F9C53E5BF98FF2E9E58A9479F41674E1CAC621567BF792614083AF670258004003D7AF5679A7772B670883810949618EF322AE051DC9916ADDA346FEF6E43161F0D0F7E76FB9C659B4ED2A11EC69D366F66E9E2359B2FA6BA0E4B8F08DB959DFE42DFC81100D4B40C94F4DB08C4
+1F7A3EBF17CDE77286788E6718751CE03E3264C7BA4A5631994401806123C6DA398F620BA90020E0F3A7CD5EA6AC6D71F5EFD35C76F5689FE9267603BDED7A5C8B3EF734FEAC53DF91B27DAA04BF7CDFFD7273375F6AE8253410BAD6D011634F1F3BE8EC36F55B5D4900E0D4B9BBAE55D78E5D5FBC79FDAAFFC0A13A56
+3DAC6C5AE5BD7B2BED34CC6BAC71EBBE1E0CF5C4270F7292EF1530D4F83CCE40F7B1A06D3F608847E8EE8DD515A540260380BBC768EB4E43ABF964E1C794FE22210A00C6FA2D15D175BD26A8AC0CF07975FF9291872F95465362A890F4DA131F4F33E6E7A4BECF4AF51C3399A2DF7EA087C68D2BE753136F999A5B0140
+07A76E1DFA8E658B28F0EA997496CCAC9CACD444D761A39A7770A79009BB84EBCFEE5EF29CB1517625151C114188F2F3DFBD482BEA39C46782EF9C8C3286F49DF5BB9BB2E284F40837D6DC75B2B06A5D949F57595E9C91FAD2B6AD53F4F1ED2EAE236263A28EFE15336BEAE8C737CF751950C7290212805028F09E3C9B
+A26AE4D4B577CCC5D335552C5575A6E4D9BCACE47799C95EE3A6AA9975751DA5793D26EAD5E3D87A127246566646F213378FD1ADBA8DA09288849BD79EC4478D9BBB53B60F8B2B26C4A2F779B9C96F4BFA0D9F32C56F6E2E9B29FCF9D776FD1E14377503807C8296108B37EDD8AFA2A629526B6EDFBE73D4A94392B394
+F5A091786291E849624ADB2EFD438FFDCD03D5121EF84C99E1376D1259C7A15D35FF5A7454514EB2B1454B128964646CDAA1F7087DA3A63117CF74EEEAAC6FD3B353B7FB270FEF6315BF031003809BA73759C76EC0F049376363D213E39BB7EA209DE8CB4AC9A2A5A322BC1DBE3FCE15BAEC06808EBD869D3E1696FCE4
+C6BBF444750D4D0B3BE7FCBC7700A0ACA1C313D37840555555AFA9668945224E4DF5EB94A429435A008080CF6515E548072108A2A2ACD8A29965395F05009499460050C3CAE737D105001141168869D2CE427629006C5C3E9344228BC52282202A3E86B29A5EB32A011D0000C8643299D0B4AA1250D8E57900A0A469CA
+16D139A0A4AEA159515650ABCFAFD9570DABCE5F1C1521A18B09E8E93AF152D4A9D8C85D3432A99E9E24200100435DA79A4F2129A903004955B79A4FA12BAB89849F7E33A3AA1955F1292265030010B0CB292004802DAB024864322116110451599A0740000043AB298BF7598AA86615D068B41A8A81900F62654300E0
+5416F14464200000B8C24FA128E25600C0F9D3472E9E3D29696197BD23995B030053C7A48C2779477C9AA586550C002A4CFD0A1E150034B5F4047C1EA7BA42B60F89429DBB784DD8DE1D87B6CF3F04D0C66980F7EC6D3425FABFD9BDFF2992CA1B6BEEAF316FE5D46FA0DBAA295D6D5AB679FF2EBB671F1711504D4C9B
+96532C9A35B72EC84C04A8F3CA1C32994211299BF245649AB23A0010429EF439414D39009C3D1571FEAFE39296AA926C1565067C25215797BF0700F526C635420600686AEBF3F93C76354BB60F950A0B96ADDB1FB42D64933F0038741B327951104D492112F5971436754BC823684964D2B90BD10F6E9C63D7544AEE62
+2711FCFA9731C07D6CEE9B27D1A7432E9E0C5267EA8C9FB7D3B663BFC789AF2E1DDB595E922F39584EFE3008A1A1A95525A00B694C0050D1D4E58A9528744D0000F18759A8AA8602310D94F501805B532A9DA5CE4A894AA529C2DBE1FBE35CD1CBEE26A6B6E6CD2C5F3DBAFAEE6D4A97EEBD05A022692F292E0400019F
+5F59516E6A6E49A690B5B475F4F4F417AFDA0A0064122122AB49C39C442269EBE895147D38DF5D5C980F003A3AFA75CEA8ADAD0B007317AF6ED1DA9E0440023157C5B220E30900884126104924114101001D3D030028292E32B4063E9F57C12A6FDACCBA561F453077F3A55A61AD3889BB86A4E531CA27E2409085654B
+490B954A03001EA70600586545B29DC5C4A77F856200008290D4AE1F949595E8019415170380A65613350D2D000858B4D2A6A52D890424205814B392EC170020206A57F93ABA06C9822715AC32558D26C5450500A0A35BF74DC9DA3A7A00306888A79BE768002093881A8A6E61510500109F5FDB2699455B5717004A4A
+3EBC96C2C27C3A83A1A6AE21DB8720C0A2DD90F053FD8ADE675FBF72F1F4F143C99D5DECBB0EFEDEFDF83BC09ABB1E5C116D62C0C6D90B573D7BFE62E3F259B38E5CBB74F628004944904562506628D5B3AD882003004190008044FAF47ED0D6D3078021EE23DC478C050032880574C3FBF1D1F0B584ACA30F0025C51F
+02B5A8309FC1505653D390ED4310D0A2B34784F380A2BCB757632E9C3A7AF079B7C1ED7B0EFB99FBE2F7A1C8A91BE413B4294F6F5F3B1B3A66C2749FC9338202375E3C7BF243C6FF3A8192DEFCD57B29C2CAE4974F8302379F0B5B6D63D7F5C88E05B66DDB1F3E7EEEC1DD5BEB56CE03D287844F7CF89704006249EE05
+92CC33505A5C6802505A5C00004CA6B67496BA2B25C5783B7C7F9C2BD0B5DD75E28B693DFBB9263E887B9F9BD5B1C7908FB1058F13AE3DBD73E9C2A18D0281A06D87EE00A46ECEFDD3D352EF27663E48CC5ABE685EC2C3A7B2E3F47171CFC94ABF1A1994782F26F6EF63E6CD2C4D2DEDEB9CD1B6531F3A9D71FD5A6C4A
+2E3B24ECE0A64D1BF984F4979F3A8E653A74EEAFAAA6FEF789DDC9FFC447EE5BC1E7F37AB90CFF897BE037221BC40A95B84504A9B3CB7826532BF3CD2B498B81910500245C39FEE6F9DD87F1D1FFD768372E84A726265C3B130C00ADDB766DE5D8834E675CBB16FB22B3625F68F8C68D9BF8E28F0149AA9D1FBAF77507
+808BE11BDE3CBF7BF9F80E25257A87EE7557BD4C7D73F3E6D60F1FDC79965E76F6D28D3F962DCD795F5A674FC92C4C7DF3D6760EF7E32E3DBF1B7337E6D89BA4A77D07B88AA5098A44068092FC1CFF911D02F784A4168AE81A0600D04453E5FF7AEDE87757CC554B673183B7AF97DC94666A61F32EE76D6579F1DBF414
+B3662D7E60406D8366CD2CAD1FDC4B48CAAABC70396EE5F2C5B905AC8F4FD69190B58D9AB5B1734C888DFAE7D6C59B17C2535E3CE937D08D207D76F8A3F87DD614D7D6BB83F767965295992600A0A5D881AAB0A95BE2A7072DF02B00A094551D9D90FCE0DE1D00C84E7F51FF164702174D1DDD3F3E31974DD1575655D7
+5057150A38229190CBE126BC2C8C8A3A0700795969920F90F8A698B361C9FFC4C7440601805D871E32CFD4512929CEDBE13BE35CD1CB6E0068E73C5C20E0ABA96B58D8394B1B7BF61E70E34CD09D2BC77AF51BD8CB7D02008C98BCB04FFF212782571C0F5ED6BA4D9B9EBD07C90EE23666CE88D13EB7A3C38FEE0CB069
+D97AD5E61001A9EE73DFCA5A4D576CD8595A9013B87C4CC1DB24EF7193959418F52C8FA26AB071FB7E1565A5D0F5933393EECC9ABBD4AEDBD09FF0B27F4F925056C0C45D4D688CF09E2C7DD8AA636FE73E039EDDB97CEDE476B7E1A30180107FFB1A67A15000007DFA0D8E0A5DF93EFBCD84A9B3B4CDED691A26CBD76E
+2D2BCADDB76E6A514EB2F7B88954DA570FC098B4EA3677F1AAC29C5747B6CE2413C2B57F0651354DEB9E4B4C59F8C7560343A3039B663C8C8D1C3078889985553D6BE38BC8F3566C6FDBAE63D4813FE2CF870C761FE1396951AD3E46262693A6F927DD8F0E5C32FAD25F87C64D9CDED2B1FB375F356A646E5F8E506150
+DBF7192B2248764E03EC1C3AAC9CE4D4CCD2BA5D77D71F184D04B4256B7619181905AF9E941073DC65906BD366F505AA404C59B426D0B19DD3C9E045D74EEF721DE6E5EDBBA2561F2313D349D3E73CBB7D7ED3BCA1174E85FA4C9969DBBEE70FACAD3151D8D42DF17383D6A153AF4E4EDDE22E9F8E3EF6E7B2355B75F5
+F423762EA87F937113A7999B37DDB7CA67EBD2710C86CAECC51BD435B4C64CF0CDCE7C7370939FD7B8A90EED3A5D3977303F27F57B16D0A3679FE3BBE6E766244DF49D6DD8DC51F6A92F2B25857A3B7C4F9C930882C8C8C8884D57FB55AB6A6074B2C0549555CE5729E5A94A5A04ECF279A3EC7BF71B3CDC7F2F01A4D2
+BCD4E5939D474F9EEBEDE34BA7886A844A451C3502486412A143AF56A17001A046C828E1A91132C742484068D3D9AA542E850C1C21B598AB2624285492C85CAD4C762E09150A4F87C1A6825040504A786A1C9192268DA3CBA8CEE33039421A00182857A952B91955BA92FE0C8A409B5E43A7884462328BCFA810287FD9
+0749F5B5AC8E4A6C0CF7D931A822AB26DC9C0ABAE472671D15A1A11A8F2FA2A4963248409868F035E8229E90CCE2510CD5F899E50C1141B66AC22EAC562A62D3B4950546EAFCB43206574831D7E432A8A2D7A5AA9211F2ABE93ACA022011A56C4A319B0E00EA4A424335218D22E209490535F46A3EA589B2C0589D9FC9
+52AEE1D7FECD5C8B2ED45515D028044F482EA8A155F32900D0429BC31741264B59B6279D4218A9F354686291184AD8B4120E8D4125A42B04805AB350C9622375811A4D240652258F5C504D1713B5FB682B0B7454843432211443198752C46E3C17767FA7610E64C549D775D254E2AA51B9796CC9ED65843EA34A952660
+0BA9851C0DD99C6CAE5A2A20A8796C4DD954A943AF612AB1B36AB485E24F814D238BF418D5748A5024860A810A8BAF5C7F42A69044BA8C1A65B28000528D48A994A72A2648B5FA68D2384C250E952C128AC995024639FFB31F01A84E7D2DAB1B6B6CFFDCA0250161A05CA9421572459412AEAA81722509C4E57C3569D0
+4AC7918E4C258BF518D50C8A0000B8424A31575540D09AD06B984A5C919854C455D3526233C8823C0ED350B952B2AD125960A6CA2AE1A9B2F82A4C25B60EBD26A78679F7F2E183812BD7EC8AECE8D8860CC012284B6E6993CE5867A5846F07590A5776D792F4E8FABD6BA712EFC56C0B3DAF62D211002465B7D7C4B9BD
+BC1637F4EAD08F68346537425FC2B21B35568DB8EC6E341E5F093B18B872F9CE73A62DBB34F45A7E578A7E4B65D4C135ACD222DF590BB4CCDAF2B054430821841042F2A1E86577D8B14B141094F1552B041F3EE3CFD0CC32F6EECB529E6AF9373E9007218410424851F4751D3B7AC4D03C0E93837F09FE47297AD99D53
+C3ACD5C21751D2F18269841042082119150265C9DD65E887E1279920841042082124775876238410420821247758762384104208212477587623841042082124771F3EB7BBA19781104208218450638647BB11420821841092BB0F1F20A8A16BD6B0EB40E867A92CCEC178468D1586376AAC30B69122C0A3DD08218410
+4208C91D96DD082184104208C91D96DD082184104208C91D96DD082184104208C91D96DD082184104208C91D96DD082184104208C91D96DD082184104208C91D96DD082184104208C99DDCCBEEAACACA319E83793C9EBC27929FDDDB37ED0F0E6CE8552084104208A1DF18F59B3D0E84ECB97AF9E2A9A82B140A050052
+5F271F09DF9F93FDB68996CE20F7610306BACA762E2C2C98EF3F75F090E1A3C74F94B424273D6F66694DA7D3F70707C65E8D5EB725B045CBD6D2FE6347BAAE5CF7A78D4DCBAFCD9E9B9355565A62DFB67DADF6397E93DEBFCF956D2193C991E7AF7EF3E52085959A9AB267FB66A61673FD965D929663870F5C381729DB
+C7D4ACE98EA0030DB13A84FE952FC31BBE9EAEE3AE5FB910F5575969B1A969D37113A7B56C6D5B6B34914874F450E8C3FB77D81C768B966DA64D9FADADA30B00ACF2B2B07DBB525E25D1684A1D9CBA4C98329D4AA596979705EDDC422653E80C46C0826554EA871F2BEB572D75EEDDAFBB73EF5FB20350A355676CD772
+33F66A7858F0A0C1C3A4B587582C3E7DE2C8EDF8D8CA0A969EBE81BBC728E75E7D01E06ACCDF776EC5894522CF5163DAB6EB24E9FC3AE555D8DEC02D3BF749A3172139F94684A5A7A5DEBD7D53FAB0AAB272F3DA1543867A042C589693FD3670DB46030343D99AF870D85E0AF9B323E82F5F24B6B175907CAFAEAE7120
+64F7961D7B2515FCF7B8137F5320E47F597603C0508F517DFABB7CE73848C15DBF121D75E66453F366555515D2C6E123460F1CE22E7D78E8C03E6D6D9D86581D42FF4A9DE1FDB5749DF422313C34C87FDE92E69656F7EEDCDEB46EC59EFD119A9A4CD901CF9C3EFEECE99380452B343534228F47ECD8B26EC3D6DD00B0
+73DB463535F5F57F067239DCE05D7F9E3E71C47BFCA4BFA3FEB27370741FEE1514B8E56E42BCA4B849B815471062ACB9D1BF54676CD7B267E79682FCF77AFA06B28D572E5DB819776DC5EA8D864626894F1F6FDDB8DAD8C4544FDFE06CE4B1E0B0636565A5EB562E0E0AED040042A1306C6FE0D4E973B0E646BF407D17
+998844A2FDC13B5C87794A5BEEDDBDA5C1D4F2183946574FBF5D07A75E7D065CBF7A59FAECC37B094585F98EED3BC90EF2EA65626B5B7BC9F7DD9C7BF3B8DC2BD117BE9C8BC7E31DDC1FE43BC9DB67D4B055CB17A4A7A50240E4F188F3E74E455F3C3763CAD82F3751535733303496FD92B45FBD7C71CE8CC9E3BCDC16
+CCF1BD753356D238C76F52ECC7A5E664678D70EB57535DCD61B347B8F57B78FFCECA2573674DF35918E09B939DF5619098BFA74F1E337E947BD8BEDD0441D4B397D06F8142A16CDE11DCDCCA5AB6514555555B4757F2555252FCE6F52B2F6F9F865A21423FACCEF0FE5ABABE7EE59273EFFE9D3A77D3D1D5771B364257
+4FFF5E427CAD01AFC75CF2F21E6F63D3D2C0D078E2B499696F5EE76467E5BDCB497EF97CAA9FBF91B169334BAB91DE3E37AE5D2608223B2BB3A9793300303533CFCA4C0780EACAAA53C70E4D9B11F08B5E3F6ABCEA8CED5ACC2D9AAFDDB4A3D6AF8E19196FDAD8DA9B9A9953A9D4F61D3B6BEBE8666566BCCF7BA7ABAB
+4FA3D1F4F50D58AC320E9B0D0017CE455AB76CD3A2551BF9BE128400A0FEB23BE6D2790D0D66976ECED296B719699632D16F69DD22232D55F23D87CD0E3FB06FEAF439241249DAA1BCBCACA8B0C0AAC5876B48C864F2A46933224F44949795D69AEBE8A1D0D49457EB37EF0C8D386561D17CF3BA953C1ECF6B8C4FBB0E
+4E83DD86EF3D70EC3B5FCFFD3BB74E1C3B347DD6DC43C7CF798CF00E0EFC33233DF5AB2F9E4A01801B576396AFDE14141A6162D234F24404006467BD3DB06FF764DF59078F9E696E69FDE4F183EF9C1DFD67F5EEE7A2A1A1594F87F090202FEF092AAAAABF6C4908FD2C7586F7D7D27566469AA5958DB4DDCABA457ADA
+6749B2B4A4B88255DEDCF2C3B61A1A9AFA06861969A919E9693ABA7A4CAD261F06B4B2A9ACAC282A2C20932922910800083141A65000E0E8E1D0BE03065D89BEB0386046D8BEDD42A1F0E7BF66A418BE99BA01C075A8E797A7D0DB75704A7A9E98F5365320103CFBE7615555651B3B0712992C1489241D08B198442617
+E4E7C55DBFE2D4B9DBCA2573972F9AF33A39492E2F03A18FBE5A7697961447FD75728A9FBF6C63555595BABA86F4A1BABA5A55E587F33EA78E1FB67770ACF5FBE2AB97CF2D6D5AD295E892870441B46DD7C9D6DEF148F87ED96E0441DC8CBDE2E13546574F9F4EA77B79FBD45457BD4EF991E88F8BBDDAB357BF16ADDA
+50A9D4CEDD9CADAC5B3CBC77B7FE4DFA0C18C8603000A0B5ADC3BBDC1C0078703FC1D2CAA67DC7CE341AAD773F170343C31F5809FA8D3C7974BFAABAD2B977BF865E08423FCDD7D2756545A58A9A9AB45D4D4DA3AAA2B2D68600A0A6A62EB3AD465525ABBAB2524D5D66430D0D00A8AAAAB4B46991F42291208897CF9F
+B56CD52639E94566E69B26DABA79B9B95B02F7565757C5DFB826B7578950DDBA7473EEDEB3CFC239BEDE1E83B66D5AEB3B73AE81A1919969D3D2926256795972D20B631333068311BA77D7589F29E1FB83C74FF29D317BFEAEED9BF0FC3692ABAF96DDE1A141FD07BB191A997C630012090032D3D3EE26C48F9D30B5D6
+93AF5E26B6F9788589D484C97E8F1FDD4F7A91286D619597F1F97C53B3A69287CA2A2A4DB4758A0B0BEB9FF978C441AFA103A45F0BE6F802406141BE896953691F6353B3E2A282FAC791DC2A0400342525019F0700E5A525BABAFAD20E4646A6F58F807E77E7CF9E1AEC361C2FEC438D9CCCA94829020812B98EF6CFFA
+D45989101F867475F3282D2E5E307B9A8959535B07C7B07DBB7C67CE4B7FF3DAC1B13D00B4756C9F92FCF2272C1EA1FFC7CDD8ABF7EFDEDEB263EFB13397E62FF923746F606A6A8AB28ACA14DF591BD62C3D1E71C06FD6BCF81B57694AF4D6760E2C56B995750B63133332995C54F88D9A01A17FA3EE3AE3C9A3FBEF72
+72672F5856AB5D435DA3B282257D58C162696A32C562F1FEBD8163C64FFEF24C50D28BC4E9FEF36B35EAEAE97B8CF40E0BD9B37DF77E525D3F062404027EFD4B1FE2EED1B3CF00E94325255ADDE37C717EB3D64F902F97201008647F0EF1F97C15BCF4A0F12A2D297EF33A65EEC2150DBD10847EA63AD3350068329955
+159FEE4EABAC6069687E96BA35353501A0AAAA42F5E341F1CACA0A4D4D2695A654C9FA745C9CC52A070035754D1555D5794B564A1A234F1CB1B577B4B4B289B9745E455505009495552457D022F42B5DBE74CE65B05B334B2B00706CDFC9C1A1FDEDB8EB36362D9DBAF670EAA86586330000054749444154DA03002A2B
+2BB66F59BB66E3360E9B2D3D8DC36030305C915CD55D76DF8A8B2D2D2D9A3ED11B00442231004C1D3F7292EFACE65636E7CF7EFAC0B5D494644B2B9B77B93999E96F8E1E0A3D7A281400B85C0E89447AFAF4C19215EBCB4A4B9A5BDB7C39FE1077CFF8D8EB7F9FFF8B4CA2000053AB099D4ECFCDCE32323605000E9B5D
+565AF2CD4B3B34994CB3A6E6B51A0D0C8C7273B2A40FF372735AB6B603001A9D26ADE3BF79FC5B4B4B3B39E9B9F4E1FBF779D2CB1951E3F3E8C1DDA61616D2931E08350E75A66B00686E6995969AD277C02049FB9B949441EEC36437D46AA2ADD5A449EAEB14C97DEA65A52545850556362DC964725959494971A18EAE
+3E00A4A5A630B59AE8CB7C7C44DEBB9C84F81BDB7685000083A1CCE5720180CD662BABA8C8FDD522F439B19820C422E9431121AED521E260C820D7613ABAFA15152C2E872369E4703818AE48AEEABEC864DA8C39BBF61DDABA2B64EBAE90A57FAC03804D3B82DB77ECDCB96B0F764DF58923E1C54585F7EEDCBA1D1F3B
+60909BB1896948F80949E7ADBB42DAB6EFD4A7FFA0E5AB3625BD48B469D95A7A61B72C1A8D36C977E6D9D327C4840800482452EF7E03CF9D3E59565AC2E5728F1F39C8D46AD2C6CE1100684A4A85850535D5D5DF79B9559FFE2EB7E263D3DEBC160A8509B7E2D2D3527BF4EA0B00868626C9492F0180C7E7DDB81653FF
+206D1D3BA4BD79FDF0FE1D2E8773F5F2455659C9F74C8DFECBCA4A4B4A4B8A391C8E40202C2D292E2D29167DBCB1263D2D55DFC0B8619787D0BF516778D799AE01A0FF40D73BB7E3EEDCBE595C5478EAD8E1EAEACAAE5D7B0240E2D3C791C7232403F61FE81A79FC706A6A4A417E5EC89E9DB6F66D8D4DCC0C8D4C6CED
+DB860405E6BF7F97F6E6F5C9A3E103067DFABB0D0441EC0F0AF499ECCB5056068056ADED925FBE0080A49789B6760EBF7E9FA0C6E16BA9FBE0FEA0B437AF014028FCD02E1008385CB6E4D26D00E8D0B1CBD598E89CEC2C9148F4FCD93F89FF3CEAE8D4453AECCBE7CFDEE5E6B80C7607004D4DA69A86E6BB9CEC82FCF7
+6432A5D6071122F473D57DB45B5DE3D38D389283C43A3ABA923B8597AEDA1071705F4CF4791D1DDD6933025AB5B10399CBA30180AEA4A4CC50616A35497A992879B64EF66DDB393A76BC7FEFB6E4A1F7B84907438396CC9F29E00BAC5BB45AB57E2B8D460300E75E7D776DDB386BDAF8D08848494BFD3A75E9FEFEFDBB
+DDDB37B158E546C6A6CB576F921C111F317ADC9E9D9B664E1DC7D46AE2367CE49347F785222115EA1EB0B59DBDCF64BFF0B0BDEC9AEA1E3DFB76E9D6F3C3658CE8B73577E664F6C753877E93BC012024FC84F42F807CFB1E0684FEC3BE16DE75A6EB96AD6DA74E9F7D36F25849497153738BA5AB36A869A803C0DBCCF4
+845B715E637C006098E768764DCD8E2DEBF85C6E2B5BFB9933164A06F79FB7E440C89E650B662B31185DBB3B0FF31C2D5D43DCF52B1A4C66874E1F2A1BA7AEDD9F3CBA37DF7FAA91B159D71EF8E9DDE8077D2DB66F5CBB6C69DDC2CABAC5BB9CEC85017E920EAF9393622E9DD737300A0A8DF0F01A23168BB7AC5F5951
+C1D2D3D39FE2375BFA0740787CDE81FD4173172C937EFEC9543FFF9D5BD713043175BA7F3DD7BE22F4EF910882C8C8C8D0D0356BE89520F4735416E7603CA3C60AC31B355618DB4811D4F7B9DD082184104208A19F02CB6E841042082184E40ECB6E841042082184E40ECB6E841042082184E40ECB6E841042082184E4
+0ECB6E841042082184E40ECB6E841042082184E40ECB6E841042082184E40ECB6E841042082184E4EEC35FA96CE865208410420821D49891088268E835208410420821D4C8E14526082184104208C91D96DD082184104208C9DDFF000921B1DE6A90C5840000000049454E44AE426082}}}}}
+
+\par\pard\page\par
+
+\par\pard\pvpg\phpg\posx1136\posy2155\charscalex100\expndtw0 \ql\fs24\cf1\f4\fs28\cf6 Performance Goals \u8211k After Optimization {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop2879 \shpright10770 \shpbottom2879
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3175 \shpright10770 \shpbottom3175
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3469 \shpright10770 \shpbottom3469
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3765 \shpright10770 \shpbottom3765
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4059 \shpright10770 \shpbottom4059
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4355 \shpright10770 \shpbottom4355
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4649 \shpright10770 \shpbottom4649
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4945 \shpright10770 \shpbottom4945
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5239 \shpright10770 \shpbottom5239
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5535 \shpright10770 \shpbottom5535
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5829 \shpright10770 \shpbottom5829
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy2584\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Threads\b0
+\par\pard\pvpg\phpg\posx7518\posy2584\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Throughput\b0
+\par\pard\pvpg\phpg\posx10136\posy2584\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Status\b0
+\par\pard\pvpg\phpg\posx1142\posy2880\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 200
+\par\pard\pvpg\phpg\posx8126\posy2880\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 98.56 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop2890 \shpright10771 \shpbottom3130
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 250
+\par\pard\pvpg\phpg\posx8016\posy3174\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 109.02 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop3185 \shpright10771 \shpbottom3425
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy3470\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 250
+\par\pard\pvpg\phpg\posx8044\posy3470\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 106.16 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop3480 \shpright10771 \shpbottom3720
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy3764\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 500
+\par\pard\pvpg\phpg\posx8030\posy3764\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 122.00 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop3775 \shpright10771 \shpbottom4015
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy4060\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 500
+\par\pard\pvpg\phpg\posx8072\posy4060\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 117.58 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop4070 \shpright10771 \shpbottom4310
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy4354\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 550
+\par\pard\pvpg\phpg\posx8064\posy4354\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 125.01 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop4365 \shpright10771 \shpbottom4605
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy4650\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 600
+\par\pard\pvpg\phpg\posx8164\posy4650\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 99.17 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop4660 \shpright10771 \shpbottom4900
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy4944\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1000
+\par\pard\pvpg\phpg\posx8126\posy4944\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 96.56 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop4955 \shpright10771 \shpbottom5195
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy5240\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1300
+\par\pard\pvpg\phpg\posx8030\posy5240\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 107.70 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop5250 \shpright10771 \shpbottom5490
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C54453476548DB354C6D660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFBE784C940000004949444154789C5DCE5B12C0200843D19BEC7FCFAD94A93CFC923331C2B30EED2E2678039E204B034EC01DC88A0E1E80720E00D58B0F2422E0BBE9
+99FC07B223644055DE5FD082DAE7054FB2BE780B7BA79B0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy5534\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 1500
+\par\pard\pvpg\phpg\posx8032\posy5534\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf5 124.38 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10531 \shptop5545 \shpright10771 \shpbottom5785
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw16\pich16\pngblip 89504E470D0A1A0A0000000D4948445200000010000000100803000000282D0F5300000300504C5445F3807EF37174F37374F37174F37375D82A2FE02C34DF2C33C72830E6363EE5363EC5202BE53038F25560F3636BF36369F3636BF3646BC51827C61928C51927C6202CF25460C51324F13F51F03F51F24858F14858
+D36574DF9CA8CA5D49CE6E5ECA5746CA5846C95846D5887CC95043C73334C9473EC9473FC8473FC73C38E0615BF5817DC73C3AE3514FF5807EDCA6A0E3C3C3FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFF190BCBAA0000009349444154789C6DCEEB0E82300C05E079415141BC7760C7C50D2F20AEBEFFCBC92A9A68387FDA7C699A239E7F117D40A9E65DA7C440455338D1A7
+262707D63C6A93D9CC88DA58067D1D0FAB73351A5CF41B0CDED7AB6819DDD07CA09C87E1615676D0C60F8E4912F8DF1EB8972E0BEC00B7527A1B4FC63B6450206340856E282E0613C0F607C214B8181120030251FFC50FBC00E231241562EB67FC0000000049454E44AE426082}}}}}
+
+\par\pard\pvpg\phpg\posx1136\posy6354\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The table above shows checkout performance after optimization:
+\par\pard\pvpg\phpg\posx1136\posy6796\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 D
+\par\pard\pvpg\phpg\posx1298\posy6796\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 etails of the environment on which the tests were done:
+\par\pard\pvpg\phpg\posx1136\posy7240\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Server Properties:\b0
+\par\pard\pvpg\phpg\posx1496\posy7712\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy7712\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 M
+\par\pard\pvpg\phpg\posx2050\posy7712\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 emory 16 GB 
+\par\pard\pvpg\phpg\posx1496\posy8154\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy8154\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 4 Cores
+\par\pard\pvpg\phpg\posx1136\posy8626\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Testing Machine:\b0
+\par\pard\pvpg\phpg\posx1496\posy9098\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy9098\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 M
+\par\pard\pvpg\phpg\posx2050\posy9098\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 emory 8 GB
+\par\pard\pvpg\phpg\posx1496\posy9542\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy9542\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Core i7
+\par\pard\pvpg\phpg\posx1136\posy10014\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Tools Used:\b0
+\par\pard\pvpg\phpg\posx1496\posy10486\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy10486\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 J
+\par\pard\pvpg\phpg\posx1954\posy10486\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 meter
+\par\pard\pvpg\phpg\posx1136\posy10958\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Database connections\b0
+\par\pard\pvpg\phpg\posx1496\posy11430\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy11430\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1500
+\par\pard\pvpg\phpg\posx1136\posy12142\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b USER CAPACITY\b0
+\par\pard\pvpg\phpg\posx1136\posy12766\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Summary\b0
+\par\pard\pvpg\phpg\posx1496\posy13150\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1
+\par\pard\pvpg\phpg\posx1856\posy13150\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The above test results shows that the best throughput we can do, having the environment 
+\par\pard\pvpg\phpg\posx1856\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 above is
+\par\pard\pvpg\phpg\posx2646\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b  125.01 \b0
+\par\pard\pvpg\phpg\posx3384\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 Transactions per second when 
+\par\pard\pvpg\phpg\posx6390\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 5\b0
+\par\pard\pvpg\phpg\posx6514\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 5\b0
+\par\pard\pvpg\phpg\posx6638\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 0\b0
+\par\pard\pvpg\phpg\posx6778\posy13452\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  requests are pushed concurrently
+\par\pard\pvpg\phpg\posx1496\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2
+\par\pard\pvpg\phpg\posx1856\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The breaking point was at 
+\par\pard\pvpg\phpg\posx4412\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 15\b0
+\par\pard\pvpg\phpg\posx4640\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 00 requests\b0
+\par\pard\pvpg\phpg\posx5824\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 ,having a throughput of 
+\par\pard\pvpg\phpg\posx8150\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 12\b0
+\par\pard\pvpg\phpg\posx8374\posy13896\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 4.38 TPS (Transactions \b0
+\par\pard\pvpg\phpg\posx1856\posy14198\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b per second)\b0
+\par\pard\pvpg\phpg\posx3053\posy14198\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  This means that of the total request pushed were 
+\par\pard\pvpg\phpg\posx7922\posy14198\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 94.08%\b0
+\par\pard\pvpg\phpg\posx8744\posy14198\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  successful leaving 
+\par\pard\pvpg\phpg\posx1856\posy14502\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 us with only 
+\par\pard\pvpg\phpg\posx3074\posy14502\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 5\b0
+\par\pard\pvpg\phpg\posx3198\posy14502\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b .92%\b0
+\par\pard\pvpg\phpg\posx3732\posy14502\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  failed requests
+\par\pard\pvpg\phpg\posx1856\posy14944\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf7\b N\b0
+\par\pard\pvpg\phpg\posx2028\posy14944\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf7\b ote: With an increased ramp-up time,we can handle over 2500 users in less than two \b0
+\par\pard\pvpg\phpg\posx1856\posy15248\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf7\b minutes.\b0 {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop7531 \shpright1134 \shpbottom7531
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop8447 \shpright1494 \shpbottom8447
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop8919 \shpright1134 \shpbottom8919
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop9833 \shpright1494 \shpbottom9833
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop10305 \shpright1134 \shpbottom10305
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop10777 \shpright1494 \shpbottom10777
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop11249 \shpright1134 \shpbottom11249
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft10771 \shptop11721 \shpright1494 \shpbottom11721
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\page\par
+
+\par\pard\pvpg\phpg\posx1136\posy1560\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 The table below shows more details of the test {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop2741 \shpright10768 \shpbottom2741
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3035 \shpright10768 \shpbottom3035
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3331 \shpright10768 \shpbottom3331
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3625 \shpright10768 \shpbottom3625
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop3921 \shpright10768 \shpbottom3921
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4215 \shpright10768 \shpbottom4215
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4511 \shpright10768 \shpbottom4511
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop4805 \shpright10768 \shpbottom4805
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5101 \shpright10768 \shpbottom5101
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5395 \shpright10768 \shpbottom5395
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5691 \shpright10768 \shpbottom5691
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop5985 \shpright10768 \shpbottom5985
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+ {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1140 \shptop6281 \shpright10768 \shpbottom6281
+{\sp{\sn shapeType}{\sv 20}}{\sp{\sn FFlipH}{\sv 0}}{\sp{\sn lineColor}{\sv 13421772}}{\sp{\sn lineWidth}{\sv 0}}{\sp{\sn fLine}{\sv 1}}{\sp{\sn fFilled}{\sv 0}}}}
+
+\par\pard\pvpg\phpg\posx1142\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Threads\b0
+\par\pard\pvpg\phpg\posx4554\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Throughput\b0
+\par\pard\pvpg\phpg\posx6182\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Pass(%)\b0
+\par\pard\pvpg\phpg\posx8316\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b F\b0
+\par\pard\pvpg\phpg\posx8444\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b ail (%)\b0
+\par\pard\pvpg\phpg\posx9804\posy2446\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Ramp-up \b0
+\par\pard\pvpg\phpg\posx1142\posy2740\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 200
+\par\pard\pvpg\phpg\posx5162\posy2740\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 98.56
+\par\pard\pvpg\phpg\posx6402\posy2740\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy2740\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy2740\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy3036\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 250
+\par\pard\pvpg\phpg\posx5052\posy3036\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 109.02
+\par\pard\pvpg\phpg\posx6402\posy3036\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy3036\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy3036\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy3330\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 250
+\par\pard\pvpg\phpg\posx5080\posy3330\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 106.16
+\par\pard\pvpg\phpg\posx6402\posy3330\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy3330\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy3330\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy3626\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 500
+\par\pard\pvpg\phpg\posx5066\posy3626\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 122.00
+\par\pard\pvpg\phpg\posx6402\posy3626\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy3626\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy3626\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy3920\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 500
+\par\pard\pvpg\phpg\posx5108\posy3920\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 117.58
+\par\pard\pvpg\phpg\posx6402\posy3920\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy3920\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy3920\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy4216\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 550
+\par\pard\pvpg\phpg\posx5100\posy4216\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 125.01
+\par\pard\pvpg\phpg\posx6402\posy4216\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy4216\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy4216\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy4510\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 600
+\par\pard\pvpg\phpg\posx5200\posy4510\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 99.17
+\par\pard\pvpg\phpg\posx6402\posy4510\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy4510\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy4510\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy4806\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1000
+\par\pard\pvpg\phpg\posx5162\posy4806\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 96.56
+\par\pard\pvpg\phpg\posx6402\posy4806\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy4806\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy4806\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy5100\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 1300
+\par\pard\pvpg\phpg\posx5066\posy5100\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 107.70
+\par\pard\pvpg\phpg\posx6402\posy5100\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy5100\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10164\posy5100\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy5396\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf8 1500
+\par\pard\pvpg\phpg\posx5068\posy5396\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf8 124.38
+\par\pard\pvpg\phpg\posx6182\posy5396\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf8 94.08%
+\par\pard\pvpg\phpg\posx8428\posy5396\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf8 5.92%
+\par\pard\pvpg\phpg\posx10164\posy5396\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\cf8\b 10 sec\b0
+\par\pard\pvpg\phpg\posx1142\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 2500
+\par\pard\pvpg\phpg\posx5174\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 75.98
+\par\pard\pvpg\phpg\posx6402\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10226\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 2\b0
+\par\pard\pvpg\phpg\posx10346\posy5690\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b  min\b0
+\par\pard\pvpg\phpg\posx1142\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 3000
+\par\pard\pvpg\phpg\posx5160\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 89.38
+\par\pard\pvpg\phpg\posx6402\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 100%
+\par\pard\pvpg\phpg\posx8940\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 0
+\par\pard\pvpg\phpg\posx10226\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 2\b0
+\par\pard\pvpg\phpg\posx10346\posy5986\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b  min\b0
+\par\pard\pvpg\phpg\posx1136\posy6520\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22\cf8 Note : The numbers marked in red showed errors during tests
+\par\pard\pvpg\phpg\posx1136\posy7144\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b Errors Found\b0
+\par\pard\pvpg\phpg\posx1136\posy7528\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 B
+\par\pard\pvpg\phpg\posx1280\posy7528\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 elow are the type of errors found during the tests. These errors were produced at the breaking 
+\par\pard\pvpg\phpg\posx1136\posy7832\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 point of the system
+\par\pard\pvpg\phpg\posx1136\posy9460\charscalex100\expndtw0 \ql\fs24\cf1\f2\fs22\b 404/Not Found\b0
+\par\pard\pvpg\phpg\posx2678\posy9460\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22  \u8211k This was caused by exceeding the maximum number of connections to the 
+\par\pard\pvpg\phpg\posx1136\posy9762\charscalex100\expndtw0 \ql\fs24\cf1\f1\fs22 database {\shp{\*\shpinst\shpbxpage\shpbypage\shpwr3\shpfblwtxt1\shpleft1134 \shptop8273 \shpright10772 \shpbottom8976
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn fBehindDocument}{\sv 1}}{\sp{\sn pib}{\sv{\pict\picw987\pich72\pngblip 89504E470D0A1A0A0000000D49484452000003DB00000048080200000069F171FB0000200049444154789CEDDD7754134B1700F09B46126AE84D10A559113BF62E7654AC88A2A06241057BC3DE2B2A284551ECF8EC0D0B228A5D9FF21441A48820520301D2DB7E7F446344443F9F92A7DCDFE178D8C9DD9949CEEC70B3
+3BBB92088200841042082184909A90D5DD018410420821846A35CCC81142082184105227CCC81142082184105227AAF2B78C8C0C0E87A3C6AE20F413B1582C1CCFE84F85C31BFDA9706CA3DA80C562D9DADA562AA4AA6E3C29AE5383FD41E817EAC9E2DECCD255772F10FA258638E3748DFE4C3D595C1CDBE88FD793C5
+FDB21057AD208410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44EB52E230F9CE032A58F59A59FB7AF137F5D8B044144AC9934C3AD5EF0F2B1BFAE
+95DA66FBC201EAEE420DC9C978316F98C352CFE6DC32B6A2246ACB8C0D7E3D7FB8C27BD78ECD1BE69099F2E42775F0935BE72303C7B55C36BEB55C26FBE99523A474687BC0028F665BE60EE655942A4A0E6C99793478E19791F347370D5A38AC667B87AA537BA6EE4A6A66D0DEBA1435A58F597AD2C37F59CF8FC1C34D
+E9C7C679ADCBC8C778F94C9E3E67C8084F00706ED166F2F43993A7CF313535F9752D728AF3FEBE7361C020F7B59B827F5D2BB58A62ACD792999D4E91038048C88B3F13AA28D1A2CA35C8C40F57A84D93010083F6E3357CCDA3EB472C2C2C4F5EBA45A6D4BA8905D598B417F79F269C8F3A71994195275C8A0280F4978F
+529EC44EF49DF165F09C852BC6FB4CADF13EA2AAD5AAA95B558D0D5A4D8A1800E81419005048723A45FA2F7AFD7FABF916FF9B7E789CD7BA3F9CAD7B7A76779FEED2DD1D006C1D9B75779F6EE9D8D67F648B2BD13B1401DBE60F9D33A2D1DBB41753FA984587066E98D5C76F60DDDD2BBCC4423E0008F9DC434173E68C
+68347764E35B17F657AA5C22119FDEBB72CE88467E03EB6E5F38ACF0FD1BA180B7686C0B0038F3D7E1D9D33E3B47FEF271DCEA29DD670CB2D932777059492100C49E0E9BD2C72CEE6C4480BB4366CADFBB57782DF46C7E2E6AA3FF503B007893FA6CFDCC3E7E03AD178E71BE7E72374110005029A636501DE5B56766B7
+B573BC77F518A7384FB5F0DA895DF3863914E7BD858F67BE335E3ECC7D93326F9843ECC9901D0B862EF670BA787063D2C3EBAB267658E3DB59F5BC7856EA3F9B66F65E36BEF5E5235B1525AF9EDDDE3667D0228FA6214B3DCA4B8B00E0F6C5FDF38639245C8A0A1CD7B2D275A427F167D64DEBBE7054E3CDFE7D5F3DBB
+0D003BE60F2DCCCBC94C7FD5BF8BB34CE51C79515E56C4EA094B3C9D37FAF5CA4CF91B0072DF24CF1BE670E5D8F60DD37BC49D0DAFD44A796951D4E6E98BC7340B1CD7E2AF3D4B8402EE973D79F5F7ADED73072DF6705A3FADFBC3D8E85FF499D7BCBD6B3CBEFC5177A7FE730AB25E98989815CA2CACEAD6CFCB4C94CB
+6427762FF49EE22FD2B0F83278DB861507F7ED01803D2BC62FF46C7E27E6F0DC918D178E714EBC175329B230373368F1C85983EB077ABBA4BF7C04DF9A90CB4A0A43574D98E956CF7FA8FDA1ED01423E17BE9890931EDF5833ADC70CB77A4BC7B7B91373F8577F32FF71B573EA56F845833633E5F13A3FD7196EF5564C
+EA98FC77FC37BB2116090E6EF39F37B2F1AC21B6C1CB3C158947594961F0F2B1FE43ED167834BB7E6A8F2232C0DD61EFFA29911BA7CF186413B470D8DBB417ABA6749D3DCC31EE6C0400C49D8D98D2C7EC6A74F012AFD633DDEA9D8BDA58A9A12A33A55A7238FC9B715EEB32F20A299323D6E449A80020033247AC69DD
+C0C5CCDC32F9D155001009F999298F3B76EEA2A349038067B7CFCE9AB3D467CACCE70FAEC69D0D0780B307D6DEBF767CDEE29513264E3B16B248716D48E9D2A1CDD74EEE19317ADCB2D55B8ADEBD0E091CAD41A5AEDEB80B00FA0C183277E14A656449E1BBB0B53EE666C63BC38FC8859CA82DD300408749028047B1D1
+33E72CB1B434D7659279E56C76CECB80852BB865EC1D8B8693E4C2551B7676EEDAE3D4DE550F6FFC0500AA3135F511AAD397E3BB96CCEC3DFB0FA3D268374E85A8166AD1A4004023CBE1E3996F2655AEC5A002C0D3F85393A7F9D7AB6F7BEBFCBE1777CFCD0F5C23E4716E440729F77D967079CA8C398E0D1ADE3C1396
+99F27749D1FB435B6658981B6DDF731024DCE85DF30080C5A402C03F096766CC5E646969AEDC373531213A7841D3A64D576CD86962A4BF7FC3147641CEFCC0350686C6F5ED1C76861FA252A98A48B94C7678EB0C4E41D6A61D61CD9C9B1FD830592CE06B336800F024EEC4F0519EEDDB77ACD4CAA12DD3DFBC7C387BC1
+B289BEFE4F6E9EBE10B9B6524FCCCD4D8F04F95BD7B1DCB433A25B8F5E578E6E2B2B29F8959F7DCD99B8F4E8374B1085249703C809928C203118F45B17233568E4BBF7EECF1CEAB87BC5388958A81A4C26C9691429006833495C4E717EE6B3156BB691401A1DF2D96A01B94C16BE7662495EFA96E048E766CD772FF314
+09F9D54CC80010BEC63BEDF9DD398B56F94E0FB81F7BE244E852F87C4296CB647BD7FB5A5B596CDD15D9AD47EF7307D671D8F935F629FDD7D4DAA95BE1570C5A822022D64E22C979DB42F66BD2A9FB374D539CA7ABC6ADF3FB1EDCF86BDEE255AB37EE62E7A6C59DD90300A72396BF7A1ABF7AE3AEB6EDDA9F8A5899FB
+260500E81AB4A447D7DAB76FD7B3CF80578977A2364F9D3567B19999D9B903EBC422810E830C00A94FAF6FD81EDAA153D79863DB33921FAB36F465A6544B0E877F39CEA93FB533BF25915CA3738F7E278FEEABE014BD7DFD4C2A91B4E93C9000120074EED69B65D3B64B3DE7A8BDC16989F17D46F93F8A3BD9A05113DB
+566E8E64F9A1C89067B74FDB3569ABACEA61DC099BFA767D46CE14CBA90387A44745EC789BFEDCD4A2050068EB9B69983691C83F44FE73EF92582818306C1CC3A28DABDB88D06DABCB394564120500860CF774EA328A2FA50280442C9E3C7331D3B0DED50B27847CEE68AFA9759CFA7A3875BE76E9F4D3F8532E3D47A8
+C654486AFCB3AB71011B2EAABB0B6A42D71F3CDCF3C4E17D5D064DFA562809005CDA7532B6EFD0A6C3F3D7AF5EF6EE3BD8C8BEB3BD63A3DC776F944143467A5A36EEE9CED0497CF2203BF95E3E435B2C12F475F304C366AE03DCC377AEE396B1814C060037F7D10E6D0773C564E9C7D9FE79C21900F09CB24846371E39
+5E33D0DFEBE5FD8B16EEBE541A4D83A1493269457CBC6E99979DFA3E2B75D8181F8A69ABBEEEBA37AE9C4D4DBC6565630F00AD5D3AB6EEE9C99751E0E533652B9959D959A98903878CB26DED4621134E09D79FDDBD386CDA3AD59E9409640421CBCB7BF73CADB0EB00AFF1BEB3324A18CA23EB773771E951E579714CC7
+AB54CFBE71615E6E79695146EA8BA6CD5D2E1DD9DA67E0F0D8983387FE8AF19B34FAF1CDD3ED5DABB8B04002904A251E3E33295A162E1DBAC79C3FC1ABE068E9B014AFE66625BFCB4C1E397692B6758781A3F4AEC79C79F938B69A0939232B3323F9C920F7D18D3A0EA79288849BD79EC49F191BB05D358623941372D9
+FBDC9CE437C5BD864E9C38252087CF92FEFCC562BF87DA3B7503C0AF19B4845CBE7E5B98A6B69E4CDBB659AB76678EEF575CDBAC068D2492CB644F12539AB7EF1D7EF88208B48A45E03571DA94C9DE6423E7965CF1B54B670AB3932DEB35249148169656ADBB0F37B5A81B73FE64BB0E5D4C1DBBB6ED78FFD8813D9CA2
+770072001834CC836CE4E43AD4FB666C4C7A62BC6DA3D6CA86BECC94EA356C511B0E877F39CE3123070068D36DC889C311C94F6EBC4B4FD4D1D5ABE7D4252FF71D0030758D44729A08A85A5A3A3C2E472E930978DC57294913073400008958C829CC5656421044594951BDFA76A5624D0060B22C0080C7C9131B180380
+8C204BE43465B094CF0680754BA6934864B95C461044D9C751AE6D52BF424207000032994C26F4EC2B24147E692E0068E859F165740168E8E8EA9595E4578AA999CF4ABDAAFCBA591BE67A39015D074EB878E6786CF40E1A99544D24094800C0D031E28A29240D1D0020691973C5143A535B26FDF4A58DAA6D5121A6C8
+98660020E19752400A001B97FB93C864422E2308A29C9D0B40000043BF2E47F4D944C1E5E4D368341EC54C2A0639D31C0004E585221919080000A1F4D3509409CB00E0EC8983E74F1D5394F04BDE916C1C00806554A744A438223EB5C2E314018026CBB44C4405003D7D13895824E096A9C69028D480052B23766FDBBF
+75CE7E80262EAE1E33B7D034E8FFE6E3FD4F5124E5988E7F8D4D23975E7D072D9FD8C1B16193F7EFDE76EDD14706D43A56754B29F5EADB3AE467260254B9D4874CA650644C2BB18C4C63EA00002115295F93F04A01E0D4F1A8B37F1D51945414BFD56432E02B1332B7F43D00E81858F2A40C00D03334158B457C2E4735
+864A85B98B5787056F095D3F03009C3B0EF0991F4CD3A81513F5976AEDD4ADF02B062D894C3A7DEED2831BA7F9BC72C5CDF424425C7D375CDD3C735E3FB97422F4FCB1601D96D1B8D9DB9BB6E9F538F1E5C5C3DB4B8BF314A7D8C91F2A2174F5F42B2474298D05009A7AC642B90685AE070020FFD00A55CB5C22A701D3
+1400843CB6B2952A33252A95561B0E877F39CE3123070030B06A6A53DFEEE5A3ABEFDEA4B4EFD45D029A8AF2E2A202009088C5E565A5563676640A59DFD0C8C4C474C1F2CD0040261132B2B6F208209148864626C5851F2EA01715E40180919169952D1A1A1A0340C082150D1A37230190402ED4B4CBCF780200725019
+A324928CA00080918919001417159A3B80582C2AE394D6ADEF5029A63608D870B1D288AF3D733A8FA4EF3ECA2B6A6F703DBB868A122A95060022010F00382585AAC172E2D3BF523900004128D2DA0F4A4A8A4D004A8A8A00404FDF405B571F00FCE7073A366C4A220109080EC5BAF8ED7300901095BF0018199B254B9E
+94714AB4740D8A0AF301C0C8B8EA7BA30D8D4C00A0DF806183868D06003289E0518C0B0ACB0080F87CC99CA21543636300282EFEF05E0A0AF2E80C86B68EAE6A0C4140BD9603228FF72A7CFFF6FA95F3278EEC4F6ED7A75987FEDFFB39FE0E301DAF8650469BE0BF6EE6BCE5CFFE79BE6E899FDFC16B174F1D0220C908
+B24C0E4C864635FBCA0832001004090048A44FC783A18929000C701BEE36DC1300C82097D0CDEFC75F82AF4DC846A600505CF461A01616E431184C6D6D5DD518828006EDDCA3BAB816E6BEB91A73EEF8A17DFF74ECDFAAEB909FF959FC3E6AF3D40DBF66D0A63CBD7DED54F898F153BD7CA60507AD3B7FEAD88719FFEB
+241A267356ECA648CB935F3C0D0EDA703A6285A3538783DBE6366DDEEAC091D30FEEDE5A1D381B481F267CE2C3BF2400902BE65E20A9BC02ECA2823A00ECA27C0060B10C95AD549D29D58EC3E15F8EF35AB78EBC4A6239AD6BAF81890FE2DEE764B5E93CE0E3B083C709D79EDEB9786EFF3A8944D2BC75270052C72EBD
+D3D352EF27663E48CC5A327F76C2C3A7AAF5F4E8E3969D957E353A38F15E4CEC85C336F5EDACEC9A55D962D3B63DE874C6F56BB12939FCD0887DEBD7AF1313CA6F47559C01756ED75B4B5BE7C2D19DC97FC747EF592A168BBAF519FA133F81DF88EAF8AE5573BA8C20B5EB338EC5D2CF7CFD52516266510F0012AE1C79
+FDCFDD87F197FEAFDA6E9C8B4C4D4CB8763204001A37EFD0A845673A9D71ED5AECF3CCB23DE191EBD6AD17CB3F0E4852E559A2534F3700381FB9F6F53F772F1FD9A6A1416FDDA9EA8498656A6363EBF0F0C19D67E925A72EDE58B67851F67B7695918A5658A6368D9D9CEFC75DFCE76ECCDD98C3AF939EF6741D28574E
+5324320014E765CF18D13A6857686A818CAE6B0600067A9AFFD77B47BFBB22A1763A8715B2758DE2DE38AB7A8EEFB2DF949716BD494FB1AEDFE0072A3434AB5FDFCEE1C1BD84A4ACF27397E302972CC8C9E77C7CB18A09D9D0A27E13A71609B167FEBE75FEE6B9C894E74F7AF51D44903E3B3352F43E6BE2C0C63B43C2
+32D95426AB0E00E8D7EE815A6BA76E859F3E68415C06006C0EF75242F2837B7700E06DFAF3EAF73818347FD2E8DEF189397C8A29534B4757474B2A11C86452A14098F0A2E0CC99D300909B95A6788EC537C59C8A48FE3B3E263A18009C5A775679A58A4CA9F61C0EFF669C6346FE41CB2E432512B1B68E6E3DA72ECAC2
+AEDD5D6F9C0CBE73E570B75E7DBBB98D0780E13EF37AF41E703464E99190C58D9B34E9DABD9F6A2583C6CC1A3EDAEBF6A5C843DBFD1D1B365EBE215442AAFA623A53BFEED2B5DBD9F9D9414BC6E4BF49F218EBA3A1C1A8A67B142DB3755BC334991AE16B7C3293EEF8052C72EA38F827BCEDDF936294D7C2399D4BE80E
+F7F0516E366AD3BD4B0FD767772E5F3BB675D0D0D10040C8BFBD9E5A2A9500408F5EFDCF8407BE7FFB7AFC243F439B6634DD3A4B566D2E29CCD9B37A526176B2C7D80954DA574FDBD469D43160C1F282EC9707374F2713D2559B82A97A5655B725A7CC5BB6D9CCDC62EFFA690F63A35DFB0FB0AE675F4DDFC432F2ECA5
+5B9BB76C7366EFB2F8B3A1FDDD860FF39E5F29C6A24E1DEFC93392EE5F0A5A38FAE25FFBC74E98DAB045A76FBE6BF487B97D394A93416DD5C35346909C5C5C9D9C5B077ABBD4B77368D969E00FD42603DAC2953BCC2C2C42567827C41CE9D36F60DDFAD50D54899C327F65508B962EC742E65F3BB163E090911EBE4B2B
+C558D4B1F29E3AEBD9EDB3EB670F3E773CDC6BE2F4A6ADBAFE40DFFE24B576EA56F8B983D6B96DB7B62E1DE32E9FB87478D3E2959B8D4D4CA3B6CFAD7E97B11326DBD8D4DDB3DC6BF3A2B10C86E6CC056B7574F5C78CF77D9BF97ADFFA2923C74E726ED9F6CAE97D79D9A9DFD381CE5D7B1CD9312727236982EF4C73DB
+16AA2F7D9929D5AAC3E187C7394979736E4646466CBAF64FEED77F159D2CB1D2E2948A35D9222D4589845F3A7B54B3EEBDFA0F9DB19B00123B3775894F97D13E011E5EBE748A8C27D52814681340229308233A57932204009E94512CD22654CEA0908030A4F3B5A8420A1904526A91505B4A50A824998D76896A5B0A9A
+149111834F05A984A0148BB405320D3D9AC098C1CD15B004521A0098312BB4A8C28C0A63453C832231A4F3E814994C4EE688196512E6973148A9A71DF74CE29F70BB1F832AB337106697D1154BAB8D34A5E6DA22B18C92CA669080A8A32BD6A5CB445232474431D7166796326404D9DE805FC0D528E4D30C99120B1D71
+5A094328A5D8E8091954D92BB696A2863C2EDD88290112C1E6538AF87400D0D1909A6B4B691499484ACAE7D1B9628A015362A923CEE43079E2CA5FDDF5E952632D098D4288A4E47C1E8D2BA600400343815806991CA66A249D4258E888346972991C8AF9B462018D4125943D04804AAD50C9720B1D89364D260752B988
+9CCFA5CB89CA31864C8991A6944626A4722811500AF97FCE22F2EF34C4995C7BA6EB2AE96908B5A9C25CBEE22E37C29451A14593F0A5D40281AEEA9C6CA3C59610D45CBE9EEA546944E7B134F8593C43A9FCD3C0A69165260C2E9D2295C9A14CA2C91133AB9F902924993183C7244B0820F1641A6C91969C20558AD1A3
+09581A022A59269593CB258C52F1677F0250957ADA71FFD4B1FD73072D09083366B926552A94518A855A66CC7212C84BC5DACA41ABAC475933952C3761701914090008A59422A19684A019D0792C0DA14C4E2A146AEB6BF0196449AE8065CE2C57ECAB4196586B718A455A1CB1264B836F44E765F358772F1FD81714B8
+7247749B164DC8001C095371FB9CB2C52A33253C1C54F5B4E3DADADA562AACA5197925498FAEDFBB763CF15ECC96F0B39A75DA008022231F3921A0DBC805EAEE1DFA117F4C468ED0973023477FAA3F3823FF633CBE12B12F2870C9F6D3560DDBABBB2FBFAB2A3372BCB31300E0CCBE951C76A1AFDF5C7DEBE622CCE210
+42082184500DC28C1C0020E2F0450A484AC45A65920F0F2834B7B68BBDFB822DD22AFDC6D38410420821846A8B9E033D470F1F9C2B6009A4DF0E46DF0F337200806C1EAB5289584649C7C5D908218410422ACA244CC59D6CE8E7C267AD208410420821A44E9891238410420821A44E9891238410420821A44E98912384
+10420821A44E9F3D8F5CBD5D410821841042E88FF7E5F3C8F11C39420821841042EAF4D9D30F758DADD5D50F847EAEF2A26C1CCFE84F85C31BFDA9706CA3DAA0BC28FBCB423C478E1042082184903A61468E1042082184903A61468E1042082184903A61468E1042082184903A61468E1042082184903A61468E104208
+2184903A61468E1042082184903A61468E1042082184903AD550465E515E3E66587F91485433CDFD0A3BB7AE0F0B0952772F1042082184D09F86FAED100000D81BBAEBEAE5F3C7CF5CA150280090FA2AF9606458F6DB3706FA46FDDC86B8F61DA81A5C50903F67C6A4FE03868E1E374151929CF44F7D3B073A9D1E1612
+147BF5D2EA8D410D1A3656C67B8E1818B87A93A363C3AFB59E939D55C22E6ED6BC55A5F25953BCDFBFCF512D2193C9D167AF7EE79B42B5CD9B8CF44307C2D35EBF6230984ECD9A7B4E98ACAF6F50909FE737799C6A98EFF4809EAEFD6EC65EDDBD738B6AF9AEB00366E69635DB6584FE0FA9A929BBB66E60E9B3D66CDC
+F1A9F02BD375DCF52BE7CEFC55C22EB2B2AA3B76C2E4868D9B56AA4D26931DDA1FFEF0FE1DBE80DFA06193C953671A1A190300A7B42462CF8E949749349A466B97F6E3274EA552A9A5A525C1DB3792C9143A83E13F773195FAE18FCB9AE58BBA74EFD5A94BF71AF900D09F69AACF98E2A242E566A72EDD67CE595429E6
+F1C37B278E45E5E5E6B2F40D47798EEFD8B99BA23CE6E2D9CB17CE9496B04DCD2D468C1ADBB67D2700B81A73E1CEAD38B94C366CD498E62DDB2A225FA5BC8CD81DB471FB1EE5E845A8267DD7B04B4F4BBD7BFBA672B3A2BC7CC3AAA50306BBFBCF5D9CFDF64DD096756666E6AAE9F28188DD14F26767DF5F3C4F6CD2D4
+59F1BB8E8EEEDED09D1BB7ED5624F7DFE34EFC4D8954FC65460E0083DD47F5E8DDE73BEB41B5994020581538BF5B4F575FBFD97C2E3774D7B6BDA1BBE62D5ACEE7F14824D2EEBD8748A40F83564B5B0700783CAE8363C3D90B029535B0F40DD4D37584BEC3F52B97CE9C3C56D7A67E454599B2F06BD375D2F3C4C8F0E0
+19B317DADAD9DFBB737BFDEAA5BBC2A2F4F458AA159E3C71E4D9D327FEF397EAE9EA461F89DAB671F5DACD3B0160FB9675DADA3A6B36050905C2901D9B4E1C3DE831CEFBC299BF9C9C5BB80D1D191CB4F16E427C976E3D0120E1561C41C8311D47FF128FC79D3D7FA94383468A4DBA06A352405666C696F52BBD7DFD5A
+B576497A9EB867E716730B0B5B3BC7BBB7E38F1CDCE7376B9EADBDE3BD3BF1DB36ADD9161CA1A3AB772AFA7048C4E19212F6EAC005C1E16D01402A9546EC0E9A347516A6E3485DBEBD6A45269385856C1B386498B2E4DEDD5BBA2C7DF711638C4D4C5BB676E9D6C3F5FAD5CBCA571FDE4B282CC86BD1AAAD6A252F5F24
+366EDA4CF17BC72EDD4542E1954BE7BE6C4B2412ED0B0BF6F5F6F01A3564F992B9E969A900107D24EAECE9E397CE9F9E36D1F3CB5DB475B4CDCC2D557F14E5572F9F9F35CD67ECC8417367F9DEBA19AB289C35C53BF66357B3DF660D1FD48BC7E50AF8FCE1837A3DBC7F27706180DF64AF79FEBED96FB33E54127361AA
+CF9871A3DC22F6EC2408E29B9F15FA2F130AF843868F1EE335D1D4D4AC9EAD5DF7DE7DDEBEC904001E8FCB646A19199B1A1A192B7E180C0600F0B85C9681A1B2D0D0C8F8FBBF432254F32814CA866D21B6F60EAA855F9BAEAF5FB9D8A57BEFB6ED3A1A199B0E1A32DCD8C4F45E427CA50AAFC75C1CE931CED1B1A199B9
+E584C9D3D35EBFCA7E9B95FB2E3BF9C53F93A6CCB0B0B4AA6F673FC2C3EBC6B5CB0441BCCDCAAC6B531F00ACAC6DB232D301805B5E71FCF0FEC9D3FC6BE8FDA33F945C2E17F0F9E69656CAA9585B57A752CCC387771B346AE2DA77A0A1917197EEBD5C3A748EBD1A0300E5E59C5163C6BB74E86C6C62EA367424CBC0F0
+F5AB94F7B9EF8C8D4D69349AA9A919875322E0F301E0DCE96887864D1A346AA286778810007C4F461E73F1ACAE2EAB7DC72ECA92371969762A93BE9D43838CB454C5EF023E3F72EF9E49536791482465406969496141BE7D830F8B52C864B2F7E469D147A34A4BD895DA3AB43F3C35E5E59A0DDBC3A38ED7AB67BB6175
+A048241A39C6AB656B97FE8386EEDE7BF83BDFD5FD3BB78E1EDE3FD52F60FF91D3EEC33D42823665A4A77E2D984CA500C08DAB314B56AC0F0E8FAA53A76EF4D12800789BF566EF9E9D3EBE7EFB0E9DB4B57378F2F8C177B68EFE9BF40D0C070D19AEC8AA0BF2F36EC55D6FD5C6050078DC0A1A8D1AB263F3F44963E7F9
+FBC65C3CABF8F6C5E37139A5256B572CF6F5F658B670F6F3C4A76A7E030855AB7BAF3EBABA7A950ABF365D6766A4D9D93B2ACBED1D1AA4A77D3649B28B8BCA38A5B6761FF6D5D5D5333533CF484BCD484F333236515E2FB2B3772C2F2F2B2CC827932932990C00083941A65000E0D081F09EAEFDAE5C3AB7C07F5AC49E
+9D52A9F4E7BF67540BF0B85C00B87AF97CC0749F19BE5E91E1214281A0528C4C22A5D134949B0606466FDF640040DF018307B8B92B0A8542219FC73536312591C952994C5148C8E52432393F2F37EEFA1597761D0317062C993FEB5572524DBC31843EF78D8C9C5D5C74E6AF6313A7CC502DACA8A8D0D1D1556EEAE868
+57947FB8487AFCC88166CE2D2A7DCB7CF9E21F3BC786740DBA62932088E62DDB366DD6E26064986A1841103763AFB88F1C636C624AA7D3477A78F1B815AF527EE4C0888BBDDAB55BAF068D9A50A9D4761DBBD83B347878EF6EF5BBF470EDAB3833DAB8A9F3BB9C6C0078703FC1CEDEB1559B76341AAD7BAF3E66E6E63F
+D013F45FF33E3767E46057BFC9E3EAD9DA8FF3F60500995C4E67301C1B345E14B8A66FFF21470EEEBB76E5220090C964A958D27780DBE2656B1D1B365EBB6291F2E20942BF8BAF4DD7E565E59ADADACA726D6DDD8AB2F24A3B0280B6B68ECABEBA15E51C6E79B9B68ECA8EBABA005051516EE7D820E9792241102FFE79
+D6B05193E4A4E79999AF0D0C8D7373723606EDE6722BE26F5CFB65EF12FDC9442281818111539319303FD0C7D7EFD9DF8F76EFD85229A68993F3CB178949CF130120F75DF6FDBBB72B2A3E1BCF044144ECD9E1E0D8B08993B3B5555D767111A7B42439E9B9651D6B068311BE7B87A7D7C4C8B09071DEBED366CED9B175
+3D5E154735EF1BEBA522C3837BF71F646E51273F2FB7BA3812090032D3D3EE26C46F0B8EA8F4E2CB17894D3E2E59511AEF3325C06F62D2F3C4264E1FD697734A4BC462B195755DC5265353D3C0D0A8A8A0A0FA1E1E89DA77F460A472D3AAAECD961D6105F9796D5C3A280B2DEEA626D40000089049444154ADAC8B0AF3
+ABAF4771C71200D034342462110094B28B8D8D4D9501161656D5D7807E0BC626665B768615E4E71D3B141916BC7DEACC39ED3B76515E02AA635D373FEF7DECD58BAE7D078E9F3855B9575D1B9FE497CF6FC65EF1F299A2A68E23F493A85CC05422802091AB28FF2CA6CA2485F850E5C041EEA1BBB6CD9D39B98953F3A6
+CE2D16064C9BEE3FFF56DC75E716AD00A0798B562F9E27F674EDF713FA8F6A192363D3B003C714BF5BD7B5993875E69A650BF93C9EA6969632C6C9B985FBC8311B562F050053738BB6ED3B3E79F4E9B2B6482CDA1DB4B9B8B868F1B2B500C0D4D49CE8EBB776E5220D1A7D8ADFECF81B57691AF4C64ECE1C4E90BD4303
+002093C98505F9A666781A0ED5A8EA32F2278FEEBFCBCE99397771A5725D1DDDF2328E72B38CC3D1D363C9E5F2B0DD4163C6F97C79D934E979E2D419732A151A9B98BA8FF08808DDB5756718A9AABF100A1289B8FA3730C0CDBD6B0F57E5A68606ADEA7ABEB8605AE98FCB975D904824AA7FA2C462B1A656E518F4DBA1
+D16856D63656D6363ABA7A4BE7CF1A3DCE9BC5D2570DB0B4B28EBB1EF3E58E9675ACD8454535D54D847E8E2AA76B00D063B12ACA3EDD005A5EC6D1D5FB6CEAD6D3D303808A8A32AD8FA7D2CBCBCBF4F458549A4639E7D3D9470EA71400B475F434B5B4662FFC701B74F4D1834D9BB5B0B3778CB97856534B1300984C4D
+C56A5D84FE254BCB3A0050C22E56CDC80160D848CFA1C33DB8DC0A5D5DBDA307238D8C8C14E53C2E77DDAA252C7D8365AB37D1E91FAED5BB74E8ECD2A133009497976DDDB86AE5BA2D023E5F79F187C160E0704535AFBA552BB7E262D9ECC2A9133CBCC7B82F08F0038049E346DCB97DD3D6DEF175EA2B65586A4AB29D
+BDE3BB9CECCCF4D787F6877B8F71F71EE3FEE05EC2C5F327E7F9FBB28B8B4AD8C5B60E8E5FD63FC06D18C8890B67FF22932800C0D237A0D3E9391F170608F8FC1276F137D78AE8B158D6756D943F8A3B3BCDCC2C72B2B39431B939D96666160040A3D39429FE37CF9AEBEB1B16157E3A43FFFE7DB55709D07FDEE387F7
+E6CC9C2C97CB159B540A05004824D2DDDBF197CE9F568665BF7D63626A06007F1D3FF4ECEF87CAF29CB7592678CA04FD6EAA9CAE01C0D6CE3E2D354559FE3A25C5CEA181EA8EFA0686FA0606A9AF3EC494B08B0B0BF2ED1D1BDADAD997941417177D981BD3525358FA06A6A666CA1D73DF6527C4DFF018EB0D000C0653
+281402009FCF676A6AFEAA3789FE6899E969FBC282959B39D9592412C9C8C4543586535A72FFCE2D3299AC3827F8ECE943C5EA59A954BA614DA09575DD390B0295E9B8AAA87DA1FD060E313236653099CAE5E9028100872BAA79D565E493A7CDDAB167FFE61DA19B77842E5AB61A00D66F0B69D5A65DBB0E9DF93CEED1
+8391458505F7EEDCBA1D1FEBDA6F90651DABD0C8A38AE0CD3B429BB76ADBA377BF25CBD7273D4F746CD858B9885C158D46F3F69D7EEAC451392103001289D4BD57DFD3278E95B08B8542E19183FB58FA064D9C5A00004D43A3A0209FC7E57EE7D2AE1EBDFBDC8A8F4D7BFD4A2A9526DC8A4B4F4BEDDCAD2700989BD749
+4E7A010022B1E8C6B52ACE83AA6ADEA275DAEB570FEFDF110A04572F9FE794147F4FD3E83FCBDEA1417161416478487EDEFBAC379987A3F63A3836D4D363D119F4839161B7E36F94B08B1FDCBD7D2DE6826B7F370010F0F9117B76BD4A4E6217179D8C3E9CF526A3A76B5F75BF0984BEAA845DCC2E2E1208041289945D
+5CC42E2E92C964554ED700D0BBEFC03BB7E3EEDCBE59545870FCF0012EB7BC4387AE0090F8F471F491284585BDFB0E8C3E72203535253F2F3774D7F6A6CD9A5BD6B136B7A8D3B459F3D0E0A0BCF7EFD25EBF3A7628D2B5DFA7FF8F822088B0E0202F1F5F069309008D1A3B25BF780E00492F129B7E5CA088D0FF85A5AF
+1F1F77EDE0FE307671516A6ACA817DE15D7BF456DCF7B52F2C38EDF52B001089C5415BD6C5DFB8CA2E2E3AB83FAC203FBF67EF7E0070F9FCA9F2F272F711634A4BD88A8342719FA8C28B7F9EBDCBC9EED3DF0D00F4F458DABA7AEFB2DFE6E7BD279329262A5F3211AA19D5AD5AD1D1FD743F90E2D4B2D1C707C02D5ABE
+366ADF9E984B678D8C8C274FF36FD4C40954966203005D4383C9D064E91B24BD4854BC5AA566CD5BB668D1E6FEBDDB8A4D8FB1DEFBC28317CE992E114B1C1A345ABE66338D4603802EDD7AEED8B2CE6FF2B8F0A8684549F5DAB6EFF4FEFDBB9D5BD77338A51696564B56ACB7AE6B0300C3478FDDB57DFDF4496359FA06
+83868E78F2E8BE5426A542D51536766AE6E533253262379FC7EDDCB567FB8E5D3F2C9944BF2796BEC1E2951B0E4586CEF69BC860301B356DE6E73F1F005AB56937799AFFA9E347C282B7199998798E9FA47894F248CFF104416CDFB4962FE05959D55DB67A13FEF740E8BF2C60BA0FFFE3A5F629DE1E00101A79D4D0C8
+B8CAE9BA61E3A693A6CE3C157DB8B8B8A8AE4DBD45CBD72A9E28F726333DE156DCC8315E003064D8683E8FB76DE36AB150D8A869B3E9D3E6292A9F317BE1DED05D8BE7CED460303A74EA3264D868651FE2AE5FD165B15AB76DAFD874E9D0E9C9A37B73664CB2B0B4EED0199F4A8E7E8481A1D192E5EB0EED0FBF167351
+4747B775DBF663BC262A5EBA71EDB29D43037B8706A6A66633672F3A7A28327CF70EABBAF596ACDCA06F60080077EFDC7EFF2E5BF5D1C9AEFD06291E5621128BF6860507CC5DAC7CACEDA42933B66F5E4310C4A4A933AA594C8BD02F42529E75CEC8C8D035B6566F6F10FA59CA8BB2713CA33F150E6FF4A7C2B18D6A83
+F2A26C5B5BDB4A85DF7E1E39420821841042E8D7C18C1C21841042082175C28C1C21841042082175C28C1C21841042082175C28C1C21841042082175C28C1C21841042082175C28C1C21841042082175C28C1C21841042082175C28C1C21841042082175FAECFFEC546F57104208218410FAE37DF97F767ECAC8114208
+21841042350F57AD208410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44E9891238410420821A44EFF0360419604B5372C290000000049454E44AE426082}}}}}
+
+}

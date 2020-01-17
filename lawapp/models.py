@@ -11,7 +11,7 @@ class Lawyer(models.Model):
     lawyer_info = models.TextField()
 
     def __str__(self):
-        return self.lawyer_username
+        return "%s Added Successfully!" % self.lawyer_username
 
     class Meta:
         verbose_name = 'Lawyer'
@@ -26,7 +26,7 @@ class Clients(models.Model):
     client_info = models.TextField()
 
     def __str__(self):
-        return self.client_username
+        return "%s Added Successfully!" % self.client_username
 
     class Meta:
         verbose_name = "Client"
@@ -38,6 +38,8 @@ class Cases(models.Model):
     case_title = models.CharField(max_length=200)
     case_owner = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
     case_unique_key = models.CharField(max_length=200, unique=True)
+    case_document = models.FileField(upload_to='media')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
     case_description = models.TextField()
     ACCEPT = '1'
     REJECT = '2'
@@ -52,7 +54,7 @@ class Cases(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.case_title
+        return "%s Completed Successfully!" % self.case_title
 
     class Meta:
         verbose_name = 'Case'

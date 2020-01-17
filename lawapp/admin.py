@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Lawyer  # , UserProfile
+from .models import Lawyer, Clients, RePresentation, Appearance, Cases  # , UserProfile
 
 admin.site.site_header = "Muigua & Co Advocates"
 admin.site.site_title = "Muigua & Co Advocates"
@@ -20,4 +20,5 @@ class LawyerAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Lawyer, LawyerAdmin)
+admin.site.register(Cases)
 # admin.site.register(UserProfile, UserProfileAdmin)
