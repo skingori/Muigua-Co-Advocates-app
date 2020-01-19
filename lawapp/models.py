@@ -62,11 +62,26 @@ class Cases(models.Model):
         db_table = 'Case_Table'
 
 
+class Courts(models.Model):
+    court_name = models.CharField(max_length=20)
+    court_location = models.CharField(max_length=20)
+    court_address = models.CharField(max_length=100)
+    court_desc = models.TextField()
+
+    def __str__(self):
+        return "%s added!" % self.court_name
+
+    class Meta:
+        verbose_name = 'Court'
+        verbose_name_plural = 'Courts'
+        db_table = 'Courts_Table'
+
+
 class RePresentation(models.Model):
     Represented_by = models.OneToOneField(Lawyer, on_delete=models.SET_NULL, null=True)
     Represented_user = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
     presented_to = models.CharField(max_length=200)
-    presentation_court = models.CharField(max_length=200)
+    presentation_court = models.ForeignKey(Courts, on_delete=models.SET_NULL, max_length=200, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -103,3 +118,4 @@ class Appearance(models.Model):
         verbose_name = 'Court Appearance'
         verbose_name_plural = 'Court Appearances'
         db_table = 'Appearance_Table'
+
