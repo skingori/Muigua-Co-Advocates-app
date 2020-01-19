@@ -5,13 +5,13 @@ from django.contrib.auth.models import User
 
 
 class Lawyer(models.Model):
-    lawyer_username = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
+    lawyer_username = models.OneToOneField(User, on_delete=models.CASCADE, unique=True, primary_key=True)
     lawyer_mobile = models.CharField(max_length=20, default='0700000000', unique=True)
     lawyer_experience = models.CharField(max_length=200, default='2 Years')
     lawyer_info = models.TextField()
 
     def __str__(self):
-        return "%s Added Successfully!" % self.lawyer_username
+        return str(self.lawyer_username)
 
     class Meta:
         verbose_name = 'Lawyer'
@@ -20,13 +20,22 @@ class Lawyer(models.Model):
 
 
 class Clients(models.Model):
-    client_username = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
+    client_username = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     client_mobile = models.CharField(max_length=20, default='0700000000', unique=True)
+    DEFENDANT = 'defendant'
+    PLAINTIFF = 'plaintiff'
+    OTHER = 'other'
+    PARTY = [
+        (DEFENDANT, 'Defendant'),
+        (PLAINTIFF, 'Plaintiff'),
+        (OTHER, 'Other'),
+    ]
+    client_party = models.CharField(choices=PARTY, max_length=20, default=OTHER)
     client_age = models.CharField(max_length=200, default='2 Years')
-    client_info = models.TextField()
+    Other_information = models.TextField()
 
     def __str__(self):
-        return "%s Added Successfully!" % self.client_username
+        return str(self.client_username)
 
     class Meta:
         verbose_name = "Client"
@@ -36,10 +45,9 @@ class Clients(models.Model):
 
 class Cases(models.Model):
     case_title = models.CharField(max_length=200)
-    case_owner = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
-    case_unique_key = models.CharField(max_length=200, unique=True)
+    case_owner_username = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, unique=False)
+    case_unique_key = models.CharField(max_length=200, unique=True, primary_key=True)
     case_document = models.FileField(upload_to='media')
-    uploaded_at = models.DateTimeField(auto_now_add=True)
     case_description = models.TextField()
     ACCEPT = '1'
     REJECT = '2'
@@ -66,10 +74,10 @@ class Courts(models.Model):
     court_name = models.CharField(max_length=20)
     court_location = models.CharField(max_length=20)
     court_address = models.CharField(max_length=100)
-    court_desc = models.TextField()
+    court_description = models.TextField()
 
     def __str__(self):
-        return "%s added!" % self.court_name
+        return "%s" % self.court_name
 
     class Meta:
         verbose_name = 'Court'
@@ -78,10 +86,11 @@ class Courts(models.Model):
 
 
 class RePresentation(models.Model):
-    Represented_by = models.OneToOneField(Lawyer, on_delete=models.SET_NULL, null=True)
-    Represented_user = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
+    Represented_by = models.ForeignKey(Lawyer, on_delete=models.SET_NULL, unique=False, null=True)
+    Represented_user = models.ForeignKey(Clients, on_delete=models.SET_NULL, unique=False, null=True)
     presented_to = models.CharField(max_length=200)
-    presentation_court = models.ForeignKey(Courts, on_delete=models.SET_NULL, max_length=200, null=True)
+    presentation_court = models.ForeignKey(Courts, on_delete=models.SET_NULL, max_length=200, null=True, unique=False)
+    Description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -90,7 +99,7 @@ class RePresentation(models.Model):
 
     class Meta:
         verbose_name = 'Case Re-Presentation'
-        verbose_name_plural = 'Case (s) Re-Presentation'
+        verbose_name_plural = 'Case Re-Presentation'
         db_table = 'Representation_Table'
 
 
