@@ -130,6 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # AUTH_PROFILE_MODULE = 'lawapp.UserProfile'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
