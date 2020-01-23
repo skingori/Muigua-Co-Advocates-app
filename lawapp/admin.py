@@ -38,7 +38,17 @@ class RePresentationAdmin(admin.ModelAdmin):
 
 
 class CourtsAdmin(admin.ModelAdmin):
+    search_fields= ('court_name', 'court_location', 'court_address',)
     list_display = ('court_name', 'court_location', 'court_address', )
+    list_display_links = ('court_name', 'court_location', 'court_address', )
+
+
+class AppearanceAdmin(admin.ModelAdmin):
+    search_fields = ('Appearing_lawyer', 'Appearance_court', 'Appearance_date', 'Appearance_status')
+    list_display = ('Appearing_lawyer', 'Appearance_court', 'Appearance_date', 'Appearance_status')
+    list_display_links = ('Appearing_lawyer', 'Appearance_court', 'Appearance_date', 'Appearance_status')
+
+
 # class UserProfileAdmin(admin.ModelAdmin):
 #     search_fields = ('user', )
 #     list_display = ('user', 'case', 'case_description', )
@@ -49,5 +59,6 @@ admin.site.register(Cases, CasesAdmin)
 admin.site.register(Clients, ClientsAdmin)
 admin.site.register(RePresentation, RePresentationAdmin)
 admin.site.register(Courts, CourtsAdmin)
+admin.site.register(Appearance, AppearanceAdmin)
 
 # admin.site.register(UserProfile, UserProfileAdmin)

@@ -47,7 +47,7 @@ class Cases(models.Model):
     case_title = models.CharField(max_length=200)
     case_owner_username = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, unique=False)
     case_unique_key = models.CharField(max_length=200, unique=True, primary_key=True)
-    case_document = models.FileField(upload_to='media')
+    case_document = models.FileField()
     case_description = models.TextField()
     ACCEPT = '1'
     REJECT = '2'
@@ -104,8 +104,8 @@ class RePresentation(models.Model):
 
 
 class Appearance(models.Model):
-    Appearing_lawyer = models.OneToOneField(User, on_delete=models.SET_NULL, null=True)
-    Appearance_court = models.CharField(max_length=200)
+    Appearing_lawyer = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, unique=False)
+    Appearance_court = models.ForeignKey(Courts, on_delete=models.SET_NULL, null=True, unique=False)
     Appearance_date = models.DateTimeField()
     WAS_PRESENT = '1'
     NOT_PRESENT = '2'
