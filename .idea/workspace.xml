@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c5846cf3-49f7-453a-844c-88123e4df2df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lawfirm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lawfirm/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,8 +140,16 @@
       <updated>1579117177382</updated>
       <workItem from="1579117182828" duration="27663000" />
       <workItem from="1579243524535" duration="7796000" />
-      <workItem from="1579805261885" duration="5112000" />
+      <workItem from="1579805261885" duration="5314000" />
     </task>
+    <task id="LOCAL-00001" summary="Email">
+      <created>1579811339458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579811339508</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,15 +191,19 @@
       </set>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="360" y="197" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579806826961">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state x="360" y="197" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.730@0.23.1280.730" timestamp="1579806826961" />
-    <state x="194" y="23" key="CommitChangelistDialog2" timestamp="1579808814542">
+    <state x="194" y="23" key="CommitChangelistDialog2" timestamp="1579811339120">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="194" y="23" key="CommitChangelistDialog2/0.23.1280.732@0.23.1280.732" timestamp="1579808814542" />
+    <state x="194" y="23" key="CommitChangelistDialog2/0.23.1280.732@0.23.1280.732" timestamp="1579811339120" />
     <state width="1238" height="243" key="GridCell.Tab.0.bottom" timestamp="1579810716775">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
