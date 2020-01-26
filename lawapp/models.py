@@ -14,6 +14,7 @@ class Lawyer(models.Model):
         return str(self.lawyer_username)
 
     class Meta:
+        ordering = ['lawyer_username']
         verbose_name = 'Lawyer'
         verbose_name_plural = 'Lawyers'
         db_table = 'Lawyer_Table'
