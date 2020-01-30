@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5846cf3-49f7-453a-844c-88123e4df2df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/lawfirm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lawfirm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lawapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lawapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/file" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lawapp/cases_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lawapp/cases_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lawapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lawapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lawapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lawapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blank.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/registration_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +67,9 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Muigua-Co-Advocates-app" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -102,7 +102,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.r.configuration.RActiveInterpreterProjectConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -161,7 +161,11 @@
       <workItem from="1579117182828" duration="27663000" />
       <workItem from="1579243524535" duration="7796000" />
       <workItem from="1579805261885" duration="4504000" />
-      <workItem from="1580055380030" duration="4739000" />
+      <workItem from="1580055380030" duration="10702000" />
+      <workItem from="1580109992601" duration="26000" />
+      <workItem from="1580111284983" duration="1146000" />
+      <workItem from="1580112566987" duration="6290000" />
+      <workItem from="1580373656105" duration="1033000" />
     </task>
     <servers />
   </component>
@@ -213,42 +217,42 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="194" y="23" key="CommitChangelistDialog2/0.23.1280.732@0.23.1280.732" timestamp="1579808814542" />
-    <state x="465" y="122" key="FileChooserDialogImpl" timestamp="1580066988880">
+    <state x="465" y="122" width="359" height="482" key="FileChooserDialogImpl" timestamp="1580121779062">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="465" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580066988880" />
-    <state width="1238" height="243" key="GridCell.Tab.0.bottom" timestamp="1579808452332">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="465" y="122" width="359" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580121779062" />
+    <state width="1323" height="24" key="GridCell.Tab.0.bottom" timestamp="1580374701738">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579260530646" />
+    <state width="1323" height="24" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580374701738" />
     <state width="1238" height="159" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1579805257594" />
     <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1579808452332" />
-    <state width="1238" height="243" key="GridCell.Tab.0.center" timestamp="1579808452331">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="1323" height="24" key="GridCell.Tab.0.center" timestamp="1580374701738">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579260530646" />
+    <state width="1323" height="24" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580374701738" />
     <state width="1238" height="159" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1579805257593" />
     <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1579808452331" />
-    <state width="1238" height="243" key="GridCell.Tab.0.left" timestamp="1579808452331">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="1323" height="24" key="GridCell.Tab.0.left" timestamp="1580374701738">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579260530631" />
+    <state width="1323" height="24" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580374701738" />
     <state width="1238" height="159" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1579805257591" />
     <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1579808452331" />
-    <state width="1238" height="243" key="GridCell.Tab.0.right" timestamp="1579808452332">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="1323" height="24" key="GridCell.Tab.0.right" timestamp="1580374701738">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579260530646" />
+    <state width="1323" height="24" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580374701738" />
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1579805257594" />
     <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1579808452332" />
     <state x="395" y="81" key="MultipleFileMergeDialog" timestamp="1580057722276">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="81" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1580057722276" />
-    <state x="186" y="10" key="SettingsEditor" timestamp="1580066995324">
+    <state x="186" y="10" key="SettingsEditor" timestamp="1580118647985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580066995324" />
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580118647985" />
     <state x="174" y="31" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1579805107469" />
     <state x="148" y="73" width="1080" height="529" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579807952712">
       <screen x="0" y="23" width="1280" height="732" />
@@ -258,10 +262,10 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="100" y="123" width="1080" height="529" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.732@0.23.1280.732" timestamp="1579807842214" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1579243527980">
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1580112571267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579243527980" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580112571267" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580057711305">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

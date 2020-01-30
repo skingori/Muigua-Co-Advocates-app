@@ -14,8 +14,10 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.8 (VENV)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (VENV)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="ionicons" level="application" />
+    <orderEntry type="module" module-name="qatestertool" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
