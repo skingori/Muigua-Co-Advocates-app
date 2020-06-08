@@ -1,19 +1,19 @@
-{% extends 'base1.html' %}
-
-{% block title %}Home{% endblock %}
-
-{% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
-  <p><a href="{% url 'password_reset' %}">reset password</a></p>
-    <div>
-    {% for i in cases %}
-    <li>{{ i }}</li>
-    {% endfor %}
-    </div>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a>
-{% endif %}
-{% endblock %}
+{% extends 'home/base.html' %}
+{##}
+{#{% block title %}Home{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#{% if user.is_authenticated %}#}
+{#  Hi {{ user.username }}!#}
+{#  <p><a href="{% url 'logout' %}">logout</a></p>#}
+{#  <p><a href="{% url 'password_reset' %}">reset password</a></p>#}
+{#    <div>#}
+{#    {% for i in cases %}#}
+{#    <li>{{ i }}</li>#}
+{#    {% endfor %}#}
+{#    </div>#}
+{#{% else %}#}
+{#  <p>You are not logged in</p>#}
+{#  <a href="{% url 'login' %}">login</a>#}
+{#{% endif %}#}
+{#{% endblock %}#}

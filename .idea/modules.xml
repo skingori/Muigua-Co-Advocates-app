@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/lawfirm.iml" filepath="$PROJECT_DIR$/.idea/lawfirm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../CELLULANT/QATOOLS/qatestertool/.idea/qatestertool.iml" filepath="$PROJECT_DIR$/../../../CELLULANT/QATOOLS/qatestertool/.idea/qatestertool.iml" />
     </modules>
   </component>
 </project>
