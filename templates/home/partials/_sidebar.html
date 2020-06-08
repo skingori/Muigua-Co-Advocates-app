@@ -2,9 +2,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link">
-        <img src="{% static 'dist/img/hpss.png' %}" alt="" class="brand-image img-circle elevation-3"
+        <img src="{% static 'dist/img/loglog.png' %}" alt="" class="brand-image img-responsive elevation-3"
              style="opacity: .8">
-        <span class="brand-text font-weight-light">HPSS Record System</span>
+{#        <span class="brand-text font-weight-light">KM&CO</span>#}
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -27,35 +27,38 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
-                        <p>Officers</p>
+                        <p>Lawyers</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
-                        <p>Service Members</p>
+                        <p>Cases</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
-                        <p>Permanent Staff</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Casuals</p>
+                        <p>Appearance</p>
                     </a>
                 </li>
                 <li class="nav-header">SETTINGS</li>
-                 <li class="nav-item">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
                         <p>Profile</p>
                     </a>
                 </li>
-                 <li class="nav-item">
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a href="{% url 'admin:index' %}" class="nav-link">
+                            <i class="fas fa-circle nav-icon"></i>
+                            <p>Admin</p>
+                        </a>
+                    </li>
+                {% endif %}
+
+                <li class="nav-item">
                     <a href="{% url 'logout' %}" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
                         <p>Logout</p>
